@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+   <title>한국천문연구원</title>
+
+   <link rel="shortcut icon" href="./images/favicon.ico">
+   <link rel="stylesheet" href="./css/header.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/footer.css">
+   
+
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+   <!-- 구글폰트 -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <!-- 구글아이콘 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+   <!-- 폰트어썸 -->
+
+   
+   <script src="./js/jquery-3.7.1.min.js"></script>
+   <!-- 제이쿼리 -->
+
+   <script src="./js/jquery.bxslider.min.js"></script>
+   <script src="./js/slick.min.js"></script>
+   <script src="./js/jquery-ui.min.js"></script>
+
+   <script src="./js/main.js"></script>
+   <script src="./js/header.js"></script>
+   <script src="./js/footer.js"></script>
+
+
+   <style>
+      * {margin: 0; padding: 0;}
+      a {text-decoration: none; color: black;}
+      li {list-style: none;}
+      img {display: block; width: 100%; height: auto;}
+
+      body {
+         overflow-x: hidden;
+      }
+      .noto-sans {
+         font-family: "Noto Sans KR", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: normal;
+      }
+   </style>
+</head>
+<body class="noto-sans" style="user-select: none;">
+   <div class="main">
+      <header class="hdr">
+         <nav class="hdr_menu">
+            <div class="logo">
+               <a href="./index.html"><img src="./images/logo_white.png" alt="KASI"></a>
+            </div>
+            <ul class="lnb">
+               <li><a href="#!">KASI</a>
+                  <ul>
+                     <li><a href="#!">인사말</a></li>
+                     <li><a href="#!">조직 및 업무안내</a></li>
+                     <li><a href="./subpage/subpage.html" style="color: red;">우주를밝혀온40년</a></li>
+                     <li><a href="#!">기관개요</a></li>
+                     <li><a href="#!">CI</a></li>
+                     <li><a href="#!">연구시설</a></li>
+                     <li><a href="#!">UST천문캠퍼스</a></li>
+                     <li><a href="#!">오시는길</a></li>
+                  </ul>
+               </li>
+               <li><a href="#!">연구</a>
+                  <ul>
+                     <li><a href="#!">광학천문</a></li>
+                     <li><a href="#!">전파천문</a></li>
+                     <li><a href="#!">우주과학</a></li>
+                     <li><a href="#!">우주위험감지</a></li>
+                     <li><a href="#!">이론천문</a></li>
+                     <li><a href="#!">천문우주기술</a></li>
+                     <li><a href="#!">논문</a></li>
+                     <li><a href="#!">특허</a></li>
+                     <li><a href="#!">기술보고서</a></li>
+                  </ul>
+               </li>
+               <li><a href="#!">학술교류</a>
+                  <ul>
+                     <li><a href="#!">콜로퀴움</a></li>
+                     <li><a href="#!">워크숍/세미나</a></li>
+                     <li><a href="#!">저널클럽</a></li>
+                     <li><a href="#!">교원천문연수</a></li>
+                     <li><a href="#!">IAU 100</a></li>
+                     <li><a href="#!">방문 연구자</a></li>
+                  </ul>
+               </li>
+               <li><a href="#!">과학문화</a>
+                  <ul>
+                     <li><a href="#!">천체사진공모전</a></li>
+                     <li><a href="#!">천체관측축제</a></li>
+                     <li><a href="#!">외계행성이름짓기</a></li>
+                     <li><a href="#!">포토갤러리</a></li>
+                     <li><a href="#!">천문학자료실</a></li>
+                     <li><a href="#!">QnA게시판</a></li>
+                  </ul>
+               </li>
+               <li><a href="#!">알림공간</a>
+                  <ul>
+                     <li><a href="#!">공지사항</a></li>
+                     <li><a href="#!">보도자료</a></li>
+                     <li><a href="#!">인재채용</a></li>
+                     <li><a href="#!">대외협력</a></li>
+                     <li><a href="#!">연구장비공동활용</a></li>
+                     <li><a href="#!">중소기업지원</a></li>
+                     <li><a href="#!">민원건의/신고</a></li>
+                  </ul>
+               </li>
+               <li><a href="#!">정보</a>
+                  <ul>
+                     <li><a href="#!">정보공개</a></li>
+                     <li><a href="#!">경영공시</a></li>
+                     <li><a href="#!">청렴정보공개</a></li>
+                     <li><a href="#!">내·외부감사결과</a></li>
+                     <li><a href="#!">사업실명제</a></li>
+                     <li><a href="#!">정책정보</a></li>
+                     <li><a href="#!">안전보건경영</a></li>
+                     <li><a href="#!">윤리경영</a></li>
+                  </ul>
+               </li>
+               <div class="lnb_bg"></div>
+            </ul>
+            <ul class="gnb">
+               <li class="lang">
+                  <a href="#!" class="kor">KOR</a>｜<a href="#!" class="eng">ENG</a>
+               </li>
+               <li class="search">
+                  <span class="material-symbols-outlined">search</span>
+               </li>
+               <li class="sitemap">
+                  <span class="material-symbols-outlined">menu</span>
+               </li>
+            </ul>
+         </nav>
+          
+         <div class="mobileMenu_box">
+            <div class="mobileMenu_bg"></div>
+            <nav class="mobileMenu">
+               <div class="hdr_box">
+                  <div class="close_btn">
+                     <span class="material-symbols-outlined">close</span>
+                  </div>
+               </div>
+               <ul>
+                  <li class="active_menu"><a href="#!">KASI</a>
+                     <ul>
+                        <li><a href="#!">인사말</a></li>
+                        <li><a href="#!">조직 및 업무 안내</a></li>
+                        <li><a href="./subpage/subpage.html" style="color: red;">우주를 밝혀온 40년</a></li>
+                        <li><a href="#!">기관개요</a></li>
+                        <li><a href="#!">CI</a></li>
+                        <li><a href="#!">연구시설</a></li>
+                        <li><a href="#!">UST천문캠퍼스</a></li>
+                        <li><a href="#!">오시는길</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#!">연구</a>
+                     <ul>
+                        <li><a href="#!">광학천문</a></li>
+                        <li><a href="#!">전파천문</a></li>
+                        <li><a href="#!">우주과학</a></li>
+                        <li><a href="#!">우주위험감지</a></li>
+                        <li><a href="#!">이론천문</a></li>
+                        <li><a href="#!">천문우주기술</a></li>
+                        <li><a href="#!">논문</a></li>
+                        <li><a href="#!">특허</a></li>
+                        <li><a href="#!">기술보고서</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#!">학술교류</a>
+                     <ul>
+                        <li><a href="#!">콜로퀴움</a></li>
+                        <li><a href="#!">워크숍/세미나</a></li>
+                        <li><a href="#!">저널클럽</a></li>
+                        <li><a href="#!">교원천문연수</a></li>
+                        <li><a href="#!">IAU 100</a></li>
+                        <li><a href="#!">방문 연구자</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#!">과학문화</a>
+                     <ul>
+                        <li><a href="#!">천체사진공모전</a></li>
+                        <li><a href="#!">천체관측축제</a></li>
+                        <li><a href="#!">외계행성이름짓기</a></li>
+                        <li><a href="#!">포토갤러리</a></li>
+                        <li><a href="#!">천문학자료실</a></li>
+                        <li><a href="#!">QnA게시판</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#!">알림공간</a>
+                     <ul>
+                        <li><a href="#!">공지사항</a></li>
+                        <li><a href="#!">보도자료</a></li>
+                        <li><a href="#!">인재채용</a></li>
+                        <li><a href="#!">대외협력</a></li>
+                        <li><a href="#!">연구장비공동활용</a></li>
+                        <li><a href="#!">중소기업지원</a></li>
+                        <li><a href="#!">민원건의/신고</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#!">정보</a>
+                     <ul>
+                        <li><a href="#!">정보공개</a></li>
+                        <li><a href="#!">경영공시</a></li>
+                        <li><a href="#!">청렴정보공개</a></li>
+                        <li><a href="#!">내·외부감사결과</a></li>
+                        <li><a href="#!">사업실명제</a></li>
+                        <li><a href="#!">정책정보</a></li>
+                        <li><a href="#!">안전보건경영</a></li>
+                        <li><a href="#!">윤리경영</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         
+         
+      </header>
+      <div class="visual_box">
+         <ul class="visual">
+            <li class="visual_img01">
+               <div class="visual_info">
+                  <p class="visual_title">별의 탄생과 진화</p>
+                  <p class="visual_txt">· 분자운(핵) 특성 연구로 별/갈색왜성 생성 초기조건 및 과정 규명</p>
+                  <p class="visual_txt">· 별생성 핵심과정인 가스수축운동, 강착원반, 제트/분출류 특성 규명 </p>
+                  <p class="visual_txt">· 젊은별의 원반 진화와 행성계 생성 과정 규명</p>
+                  <p class="visual_txt">· 별 생성 영역의 화학적 진화 연구</p>
+                  <p class="visual_txt">· 만기형성의 메이저 현상 및 물질방출현상 이해</p>
+                  <div class="visual_more"><p>자세히 보기</p><span class="material-symbols-outlined">arrow_forward</span></div>
+               </div>
+            </li>
+            <li class="visual_img02">
+               <div class="visual_info">
+                  <p class="visual_title">활동성은하 핵</p>
+                  <p class="visual_txt">· 초장기선전파간섭계(VLBI)를 활용한 고분해능 전파관측 연구를  집중적으로 수행
+                  </p>
+                  <p class="visual_txt">· M87과 우리은하 중심 블랙홀 Sgr A*를 EHT(사건지평선망원경)를 활용하여 집중 연구</p>
+                  <p class="visual_txt">· 우리은하 중심 블랙홀 특성 연구 </p>
+                  <p class="visual_txt">· M87과 우리은하중심 블랙홀의 에너지 방출현상과 주변 환경 연구 </p>
+                  <div class="visual_more"><p>자세히 보기</p><span class="material-symbols-outlined">arrow_forward</span></div>
+               </div>
+            </li>
+            <li class="visual_img03">
+               <div class="visual_info">
+                  <p class="visual_title">우주론</p>
+                  <p class="visual_txt">· 우주의 초기조건 검증</p>
+                  <p class="visual_txt">· 암흑물질 판명</p>
+                  <p class="visual_txt">· 암흑에너지와 수정중력의 존재에 관한 연구</p>
+                  <div class="visual_more"><p>자세히 보기</p><span class="material-symbols-outlined">arrow_forward</span></div>
+               </div>
+            </li>
+            <li class="visual_img04">
+               <div class="visual_info">
+                  <p class="visual_title">천체 물리</p>
+                  <p class="visual_txt">· 물리 과학의 원리를 도입하여 천체의 본질을 규명하는 천문학 분야</p>
+                  <p class="visual_txt">· 천체물리학에서 수치적인 기법을 사용한 계산은 필수적인 요소이고 이를 수치천체물리학</p>
+                  <p class="visual_txt">· 수치천체물리학은, 이론천문학에는 실험의 장을 마련해주고 관측천문학에서 획득한 관측 자료의 해석과 예측을 제공</p>
+                  <p class="visual_txt">· 수치천체물리학은 이론천문학과 관측천문학을 연결해주는 다리 노릇</p>
+                  <div class="visual_more"><p>자세히 보기</p><span class="material-symbols-outlined">arrow_forward</span></div>
+               </div>
+            </li>
+            <li class="visual_img05">
+               <div class="visual_info">
+                  <p class="visual_title">KMTNet</p>
+                  <p class="visual_txt">· 생명체가 존재할 가능성이 있는 지구형 외계행성을 탐색하기 위하여 2009년부터 KMTNet 과제를 시작</p>
+                  <p class="visual_txt">· 1.6m 광시야 망원경과 모자이크 CCD 카메라</p>
+                  <p class="visual_txt">· 남반구의 칠레, 남아프리카공화국, 호주에 각각 설치 완료</p>
+                  <p class="visual_txt">· 2015년부터 외계행성 및 변광성 탐색, 초신성/소행성/외부은하 관측 등 과학연구에 활용</p>
+                  <div class="visual_more"><p>자세히 보기</p><span class="material-symbols-outlined">arrow_forward</span></div>
+               </div>
+            </li>
+         </ul>
+         <div class="visual_controls">
+            
+            <div class="visual_pager">
+               <a data-slide-index="0"></a>
+               <a data-slide-index="1"></a>
+               <a data-slide-index="2"></a>
+               <a data-slide-index="3"></a>
+               <a data-slide-index="4"></a>
+            </div>
+            <div class="visual_btn_l visual_btn"></div>
+            <div class="visual_btn_r visual_btn"></div>
+         </div>
+         <div class="scroll_icon">
+            <span class="material-symbols-outlined">mouse</span>
+            <span class="material-symbols-outlined scroll_bottom">keyboard_double_arrow_down</span>
+         </div>
+         <div class="widget_outer">
+            <div class="widget">
+               <div class="widget_top">
+                  <div class="widget_date_box">
+                     <p class="widget_date">양력 3월 30일</p>
+                     <p class="widget_date">음력 2월 21일</p>
+                  </div>
+                  <p class="widget_last">(토)</p>
+               </div>
+               <div class="widget_bottom">
+                  <div class="widget_sun">
+                     <p class="widget_icon"><span class="material-symbols-outlined">clear_day</span></p>
+                     <p>일출 ｜ 06:27</p>
+                     <p>일몰 ｜ 13:44</p>
+                  </div>
+                  <div class="widget_moon">
+                     <p class="widget_icon"><span class="material-symbols-outlined">clear_night</span></p>
+                     <p>월출 ｜ 06:28</p>
+                     <p>월몰 ｜ 18:50</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="search_box">
+         <div class="search_inner">
+            <input type="search" name="search" id="search">
+            <div class="search_box_icon"><span class="material-symbols-outlined">
+               search
+               </span></div>
+         </div>
+      </div> 
+   </div>
+
+   <div class="thisYear_outer">
+      <div class="title titleThisyear">
+         <p>2024</p>
+         <p>올해의 주목할 천문현상</p>
+      </div>
+      <div class="thisYear_controls">
+         <div class="thisYear_btn_l thisYear_btn"><span class="material-symbols-outlined">arrow_back</span></div>
+         <div class="thisYear_btn_r thisYear_btn"><span class="material-symbols-outlined">arrow_forward</span></div>
+      </div>
+      <div class="thisYear">
+         <div class="thisYear_contents" data-dot-title="01.04">
+            <div class="thisYear_img">
+               <img src="./images/0104.jpg" alt="01월04일 사분의 자리 유성우">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">01.04</p>
+               <p class="thisYear_title">사분의자리 유성우</p>
+               <p class="thisYear_txt">
+                  사분의자리 유성우는 페르세우스자리 유성우, 쌍둥이자리 유성우와 함께 3대 유성우 중 하나이다.
+                  올해 사분의자리 유성우 관측 최적기는 1월 4일 밤을 넘어 1월 5일 새벽일 것으로 예상한다.
+                  올해 사분의자리 극대시간은 1월 4일 18시이고, 시간당 최대 관측 가능한 유성수(ZHR)는 약 80개이다.
+                  극대시간이 초저녁이고 새벽 1시쯤 반달이 떠오르기 때문에 관측 조건이 좋은 편은 아니다.
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="01.28">
+            <div class="thisYear_img">
+               <img src="./images/0128.jpg" alt="01월28일 수성과 화성의 근접">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">01.28</p>
+               <p class="thisYear_title"> 수성과 화성의 근접</p>
+               <p class="thisYear_txt">
+                  1월 28일 새벽 7시 남동쪽 하늘에서 수성과 화성이 약 0.3도 내로 근접한다. 이때 두 행성의 고도는 약 4도로 매우 낮기 때문에 남동쪽 지평선 근처 시야가 트여 있는 곳에서만 관측이 가능하다.
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="04.11">
+            <div class="thisYear_img">
+               <img src="./images/0411.jpg" alt="04월 11일 화성과 토성의 근접">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">04.11</p>
+               <p class="thisYear_title">화성과 토성의 근접</p>
+               <p class="thisYear_txt">
+                  4월 11일 새벽 5시에는 화성과 토성이 0.4도로 근접해 거의 붙은 것처럼 보일 수 있다. 두 행성의 고도는 약 6도로 동쪽 지평선 근처에서 볼 수 있다.
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="05.05">
+            <div class="thisYear_img">
+               <img src="./images/0505.jpg" alt="05월 05일 물병자리 에타 유성우 극대">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">05.05</p>
+               <p class="thisYear_title">물병자리 에타 유성우 극대</p>
+               <p class="thisYear_txt">
+                  물병자리 에타 유성우는 올해 극대기가 6일 새벽 6시이고 시간당 최대 관측 가능한 유성수(ZHR)는 약 50개다. 국내에서는 새벽시간이고, 그믐달이라 달빛 간섭도 거의 없어서 관측 조건이 좋은 편이다. 관측 최적기는 5일 새벽부터 6일 새벽이며, 물병자리 에타 유성우는 극대기 시간이 다른 유성우에 비해서 상대적으로 긴 편이다.
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="06.28">
+            <div class="thisYear_img">
+               <img src="./images/0628.jpg" alt="06월 28일 달과 토성의 근접">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">06.28</p>
+               <p class="thisYear_title">달과 토성의 근접</p>
+               <p class="thisYear_txt">
+                  6월 28일 새벽 0시 30분 기준 달과 토성이 1.1도로 근접한다. 두 행성의 고도는 약 8도로 동쪽 지평선 근처에서 볼 수 있으며, 밤새도록 근접한 상태로 두 천체를 관측할 수 있다.
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="08.12">
+            <div class="thisYear_img">
+               <img src="./images/0812.jpg" alt="08월 12일 페르세우스자리 유성우 극대">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">08.12</p>
+               <p class="thisYear_title"> 페르세우스자리 유성우 극대</p>
+               <p class="thisYear_txt">
+                  페르세우스자리 유성우는 ‘109P/스위프트-터틀(SwiftTuttle)’ 혜성에 의해 우주 공간에 흩뿌려진 먼지 부스러기들이 지구 대기와 충돌하면서 일어난다. 올해 페르세우스 유성우 극대시간은 12일 23시 30분으로 국내에서는 밤 시간이고, 달도 23시 6분에 지기 때문에 관측 조건이 매우 좋다. 시간당 최대 관측 가능한 유성수(ZHR)는 약 100개다. 12일 밤부터 13일 새벽까지 꽤 많은 유성을 볼 수 있을 것이다.
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="09.17">
+            <div class="thisYear_img">
+               <img src="./images/0917.jpg" alt="09월 17일 한가위 보름달">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">09.17</p>
+               <p class="thisYear_title">한가위 보름달</p>
+               <p class="thisYear_txt">
+                  2024년 한가위인 9월 17일 보름달은 서울 기준 18시 17분에 뜬다. 달이 가장 높게 뜨는 시각은 다음날 0시 4분이며, 6시 2분에 진다. 각 지역에서 달이 뜨고 지는 시각은 천문우주지식정보 홈페이지(https://astro.kasi.re.kr/life/pageView/6)에서 확인 가능하다. 
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="10.17">
+            <div class="thisYear_img">
+               <img src="./images/1017.jpg" alt="10월 17일 올해 가장 큰 보름달(망*)">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">10.17</p>
+               <p class="thisYear_title">올해 가장 큰 보름달(망*)</p>
+               <p class="thisYear_txt">
+                  올해 가장 큰 보름달(망)은 10월 17일 뜨는 달로, 서울 기준 17일 38분에 떠서 다음 날 오전 7시 22분에 진다. 10월 17일 기준 지구와 달의 거리는 약 357,200km로 지구-달 평균 거리인 384,400km보다 약 27,200km 이상 가깝다. 가장 작은 보름달(망)은 2월 24일에 뜨는 달이다.
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="12.08">
+            <div class="thisYear_img">
+               <img src="./images/1208.jpg" alt="12월 08일 목성의 충">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">12.08</p>
+               <p class="thisYear_title">목성의 충</p>
+               <p class="thisYear_txt">
+                  태양-지구-행성의 순서로 위치한 때를 행성이 충의 위치에 있다고 한다. 충일 때 그 행성이 지구와 가장 가깝게 위치하고 밝게 빛나는 관측의 최적기라 할 수 있다. 12월 8일은 목성을 가장 잘 볼 수 있는 날로, -2.8등급의 밝은 목성을 관측할 수 있다.
+               </p>
+            </div>
+         </div>
+         <div class="thisYear_contents" data-dot-title="12.14">
+            <div class="thisYear_img">
+               <img src="./images/1214.jpg" alt="12월 14일 쌍둥이자리 유성우">
+            </div>
+            <div class="thisYear_info">
+               <p class="thisYear_date">12.14</p>
+               <p class="thisYear_title">쌍둥이자리 유성우</p>
+               <p class="thisYear_txt">
+                  쌍둥이자리 유성우는 소행성 3200페톤(3200 Phaethon)이 태양의 중력에 의해 부서지고 그 잔해가 남은 지역을 지구가 통과하면서 나타나는 유성우이다. 올해 쌍둥이자리 유성우 극대시간은 12월 14일 10시이며, 시간당 최대 관측 가능한 유성수(ZHR)는 약 150개이다. 쌍둥이자리 유성우의 극대기에 대한민국은 한낮 시간이고 밤새도록 밝은 달이 떠 있기 때문에 관측 조건은 매우 좋지 않다.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="wideBnr_outer">
+      <div class="wideBnr">
+         <div class="bnr_info">
+            <div class="bnr_title title">
+               <p>최근 천문학 이슈</p>
+            </div>
+            <div class="bnr_txt">
+               <p>우리은하 중심 블랙홀 주변 정렬된 자기장 구조를 포착하다!</p>
+            </div>
+         </div>
+         
+         <div class="bnr_img">
+            <img src="./images/wideBnr_img.jpg" alt="우리 은하 중심 블랙홀 자기장 구조 이미지">
+         </div>
+      </div>
+   </div>
+
+   <div class="wrap">
+      <section class="library_outer">
+         <div class="title">
+            <p>천문학 자료실</p>
+         </div>
+         <div class="library_box">
+            <ul class="library">
+               <li>
+                  <div class="library_img01 library_img">
+                     <img src="./images/library_image01.jpg" alt="2024년 천문력">
+                     <div class="library_img_hover">
+                        <span class="material-symbols-outlined">zoom_in</span>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="library_img02 library_img">
+                     <img src="./images/library_image02.jpg" alt="2024년 천문력">
+                     <div class="library_img_hover">
+                        <span class="material-symbols-outlined">zoom_in</span>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="library_img03 library_img">
+                     <img src="./images/library_image03.jpg" alt="2024년 천문력">
+                     <div class="library_img_hover">
+                        <span class="material-symbols-outlined">zoom_in</span>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="library_img04 library_img">
+                     <img src="./images/library_image04.jpg" alt="2024년 천문력">
+                     <div class="library_img_hover">
+                        <span class="material-symbols-outlined">zoom_in</span>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+            <div class="library_controls">
+               <div class="library_btn_l library_btn"></div>
+               <div class="library_btn_r library_btn"></div>
+            </div>
+         </div>
+         <div class="library01_popup">
+            <ul class="library01_popup_img">
+               <li>
+                  <picture>
+                     <source srcset="./images/1.png" media="all and (min-width:1024px)">
+                     <img src="./images/1_tablet.png" alt="">
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <source srcset="./images/2.png" media="all and (min-width:1024px)">
+                     <img src="./images/2_tablet.png" alt="">
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <source srcset="./images/3.png" media="all and (min-width:1024px)">
+                     <img src="./images/2_tablet02.png" alt="">
+                  </picture>
+               </li>
+            </ul>
+            <div class="library01_popup_btn">
+               <a class="library01_popup_btn_close" href="#!"><span class="material-symbols-outlined">close</span></a>
+               <a class="library01_popup_btn_down" href="#!"><p>다운로드</p><span class="material-symbols-outlined">download</span></a>
+            </div>
+         </div>
+      </section>
+      <!-- 자료실 -->
+      <section class="info">
+         <div class="notice">
+            <input type="radio" name="notice" id="notice" checked>
+            <input type="radio" name="notice" id="schedule">
+            <input type="radio" name="notice" id="employment">
+            <div class="title titleNotice">
+               <p>소식</p>
+               <label for="notice">공지사항<div class="notice_activeBorder"></div></label>
+               <label for="schedule">강연일정<div class="notice_activeBorder"></div></label>
+               <label for="employment">채용공고<div class="notice_activeBorder"></div></label>
+               <div class="notice_more"><span class="material-symbols-outlined">add</span></div>
+            </div>
+            <div class="notice_box">
+               <div class="notice_info01 notice_info">
+                  <p class="notice_txt">32회 천체사진공모전 개최 안내</p>
+                  <p class="notice_date">2024.02.05</p>
+               </div>
+               <div class="notice_info02 notice_info">
+                  <p class="notice_txt">우주 탐사 강연프로그램 모집 안내</p>
+                  <p class="notice_date">2024.01.08</p>
+               </div>
+               <div class="notice_info03 notice_info">
+                  <p class="notice_txt">2024년 소백산천문대 대학생 겨울학교 개최 안내</p>
+                  <p class="notice_date">2023.12.04</p>
+               </div>
+               <div class="notice_info04 notice_info">
+                  <p class="notice_txt">2024년 연간천문종합정보기(천문력) 발행</p>
+                  <p class="notice_date">2023.11.02</p>
+               </div>
+               <div class="notice_info05 notice_info">
+                  <p class="notice_txt">2023년 재난대응안전한국훈련 실시</p>
+                  <p class="notice_date">2023.10.24</p>
+               </div>
+            </div>
+            <div class="schedule_box">
+               <div class="schedule_info01 schedule_info">
+                  <p class="schedule_txt"><b>TBD</b> ｜ 발표 : 김종한</p>
+                  <p class="schedule_date">2024.06.26</p>
+               </div>
+               <div class="schedule_info02 schedule_info">
+                  <p class="schedule_txt"><b>TBD</b> ｜ 발표 : 이윤희</p>
+                  <p class="schedule_date">2024.06.19</p>
+               </div>
+               <div class="schedule_info03 schedule_info">
+                  <p class="schedule_txt"><b>TBD</b> ｜ 발표 : 이세훈</p>
+                  <p class="schedule_date">2024.06.12</p>
+               </div>
+               <div class="schedule_info04 schedule_info">
+                  <p class="schedule_txt"><b>TBD</b> ｜ 발표 : 정은정</p>
+                  <p class="schedule_date">2024.06.05</p>
+               </div>
+               <div class="schedule_info05 schedule_info">
+                  <p class="schedule_txt"><b>TBD</b> ｜ 발표 : 안교훈</p>
+                  <p class="schedule_date">2024.05.29</p>
+               </div>
+            </div>
+            <div class="employment_box">
+               <div class="employment_info01 employment_info">
+                  <p class="employment_txt">[재공고] 2024년 제1차 계약직(연구직) 채용공고</p>
+                  <p class="employment_date">2024.02.23</p>
+               </div>
+               <div class="employment_info02 employment_info">
+                  <p class="employment_txt">2024년 제1차 무기계약직(주무직) 채용공고</p>
+                  <p class="employment_date">2024.02.05</p>
+               </div>
+               <div class="employment_info03 employment_info">
+                  <p class="employment_txt">2024년 상반기 박사후연구원 채용공고</p>
+                  <p class="employment_date">2024.02.05</p>
+               </div>
+               <div class="employment_info04 employment_info">
+                  <p class="employment_txt">2024년 제1차 계약직(연구직, 주무직) 채용공고</p>
+                  <p class="employment_date">2024.02.05</p>
+               </div>
+               <div class="employment_info05 employment_info">
+                  <p class="employment_txt">2024년 제1차 무기계약직(실무직-조리원) 채용공고</p>
+                  <p class="employment_date">2024.02.05</p>
+               </div>
+            </div>
+            
+         </div>
+
+         <div class="introduce">
+            <div class="title titleIntroduce">
+               <p>중소기업 소개</p>
+               <div class="introduce_more"><span class="material-symbols-outlined">add</span></div>
+            </div>
+            <div class="introduce_box">
+               <div class="introduce_box_t">
+                  <div class="atom">
+                     <div class="atom_img"><img src="./images/atom.png" alt=""></div>
+                     <p class="atom_txt">보유기술 및 특허</p>
+                  </div>
+                  <div class="equip">
+                     <span class="material-symbols-outlined">handshake</span>
+                     <p class="equip_txt">연구장비 공동활용</p>
+                  </div>
+               </div>
+               <div class="introduce_box_b">
+                  <div class="equip">
+                     <span class="material-symbols-outlined">content_paste_go</span>
+                     <p class="equip_txt">기술이전 및 애로기술상담</p>
+                  </div>
+                  <div class="equip">
+                     <span class="material-symbols-outlined">apartment</span>
+                     <p class="equip_txt">패밀리 기업</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- 공지사항 / 중소기업 소개 -->
+   </div>
+   <!-- 자료실 / 공지사항 / 중소기업 소개 -->
+   <div class="history_outer">
+      <div class="histoty_styleBg">
+         HISTORY
+      </div>
+      <section class="history">
+         <div class="title titleHistory">
+            <p>한국 전통 천문학의 역사</p>
+         </div>
+         <div class="history_img">
+            <img src="./images/history01.jpg" alt="">
+         </div>
+         <div class="history_accordion">
+            <div class="group group01">
+               <h3>청동기 시대
+                  <span class="material-symbols-outlined history_more">expand_more</span>
+                  <span class="material-symbols-outlined history_less">expand_less</span> 
+               </h3>
+               <div>
+                  <div class="historyMobile_img03 historyMobile_img">
+                     <img src="./images/history01.jpg" alt="청동기시대 역사 이미지">
+                  </div>
+                  <p>한반도에 천문학이 시작된 시기를 정확히 알 수는 없지만 
+                     청동기 시대의 고인돌을 통해 우리 선조들의 천문 활동에 대한 흔적을 찾아 볼 수있다.
+
+                     한반도에는 세계에서 가장 많은 고인돌이 남아 있는데, 일부 고인돌의 덮개돌에는 성혈(cup-mark)이라 불리는 홈이남아 있다.
+                     이 홈들은 풍요와 다산을 기원하기 위해 새겨놓은 것이라 추측되었으나 최근 별자리와 닮은 여러 홈들이 발견되어 고대 별자리를 표현한 것으로 해석되고 있다. 
+                     남한의 고인동 가운데 300기가 넘는 고인돌 덮개돌에서 홈이 발견 되었는데 이중에는 북두칠성과 남두육성, 묘수, 북쪽왕관자리 등의 별자리 모양 홈이 발견되었다.
+                     덮개돌 홈의 제작 이유와 목적에 대해 명확하게 밝혀진 것은 없지만 유럽과 북한에서는 이미 고인돌 홈에서 여러 별자리를 찾아 보고하고 있다. 
+                     고인돌 덮개돌에 그려진 별 그림은 한반도에 남아 있는 가장 오랜 천문 기록으로 이는 우리 민족의 천문관측 역사가 매우 오래되었음을 보여준다.
+                     고인돌 외에도 바위에 그려진 천문 암각화와 예부터 하늘에 제를 지내던 천원지방의 우주 구조론을 닮은 마니산 첨성단 등은 고대로부터 이어진 우리의 천문 역사를 잘 보여준다.
+                  </p>
+               </div>
+            </div>
+            <div class="group group02">
+               <h3>신라 시대
+                  <span class="material-symbols-outlined history_more">expand_more</span>
+                  <span class="material-symbols-outlined history_less">expand_less</span>
+               </h3>
+               <div>
+                  <div class="historyMobile_img03 historyMobile_img">
+                     <img src="./images/history02.jpg" alt="신라시대 역사 이미지">
+                  </div>
+                  <p>삼국시대의 대표적 천문 유물로는 경주 첨성대와 고구려 무덤 벌그림을 곱을 수 있다.
+                     정주 첨성대는 현재 남아 있는 세계에서 가장 오래된 천문 판즉대로 신라 선역여왕 2년(AD 633)에 만들어졌다. 
+                     첨성대는 높이 약 9m 높이에 호리병 모양으로 만들어졌는데,
+                     천원지방(전대t/)이라는 고대 동양의 우주구조론과 28수 별자리 그리고 24절기와 1년365일을 상징하는 의미를 담고 있다. 
+                     고구려와 백제에도 천문을 관측하던 관천대가 있었을 것으로 짐작되지만 현재 남아 있는 것은 없다. 
+                     다만 '세종실록에 고구려 평양성 남쪽에 첩성대가 있었다는 기록과 함께 평양전도 지도에 그 위치가 남아 있어 고구려의 천문대를 짐작할 수 있을 뿐이다.
+                     삼국시대 사람들의 천체판은 고구려 고분 벽화를 통헤 확인할 수 있다. 
+                     25기의 고구려무덤 천장과 벽면에는 해와 달, 별자리, 사신 등의 천문관련 그림이 발견되었는데,
+                     이중진파리 4호 무덤과 덕화리 2호 무덤에는 28수 별자리 전체가 그려져 있다. 
+                     고구려 무덤의 별그림을 살펴보면 북두칠성을 북쪽에, 남두육성을 남쪽에 그려 넣어 사신 방위에 따라 별자리를 배치한 중국과 다른 우리의 고유한 별자리 배치를 보여준다. 
+                     고구려 벽화에는 별의 크기가 다양하게 그려져 있는데, 
+                     이것은 조선까지 이어지는 우리 전통 별 그림의 고유한 특징 중의 하나이다. 
+                     한편, 고구려 무덤 별 그림과 고인돌 홈 모양에 여러 공통점이 알려졌는데 이를 통해 우리 고유한 천문지식과 체계가 청동기 시대에서 삼국시대로 이어졌음을 짐작할 수 있다.
+                     삼국시대의 역사를 기록한 '삼국사기.와 '삼국유사에 남아 있는 많은 천문기록 또한 우리의 소중한 천문자산이다.
+                     이들 사서에는 일식과 윌식, 행성의 운동, 혜성의 출현, 유성과 유성우, 오로라 등 240여 개의 다양한 천문현상을 관즉한 기록이 남아 있다. 
+                     천체역학 계산으로 확인한 결과 삼국시대의 관즉 기록들은 대부분 사실이었음이 밝혀졌으며. 이가운데에는 중국이나 일본의 사서에는 기록되지 않은 녹자 관측 기록도 확인되었다. 
+                     꾸준하고 사실적인 천문 기록과 관천대 그리고 여러 천문 자산은 삼국시대에 천문학이 체계적으로 발전했음을 보여준다.
+                  </p>
+               </div>
+            </div>
+            <div class="group group03">
+               <h3>고려 시대
+                  <span class="material-symbols-outlined history_more">expand_more</span>
+                  <span class="material-symbols-outlined history_less">expand_less</span>
+               </h3>
+               <div>
+                  <div class="historyMobile_img03 historyMobile_img">
+                     <img src="./images/history03.jpg" alt="고려시대 역사 이미지">
+                  </div>
+                  <p>5,000여 개에 달하는 천문 관측 기록남아 있는 고려시대 천문 유적은 비록 적지만 개성에 남아 있는 첨성대. 
+                     안동의 무덤 별그림 그리고 고려사에 기록된 천문 기록을 통헤 고려대의 천문 활동을 엿볼 수 있다. 
+                     고려의 수도인 개성에는 천문을 관측하던 첨성대가 남아 있다. 
+                     다섯 개의 사각 돌기둥이 가로, 세로 3m의 사각 돌판을 받치고 있는 모습으로 계단이나 돌판 위의 구조물은 없어진 상태이다. 
+                     고려의 왕실 천문대인 개성 첨성대는 신라 첨성대보다 화려한 모습은 아니지만 고려시대에도천문린속 활동이 꾸준히 이어졌음을 보여준다. 
+                     고구려에 이어 고려의 여러 무덤에도 벌 그림이 전해지고 있는데 대표적인 것은 안동 서삼동의 무덤이다. 
+                     이 무덤의 천장에는 북두칠성울 중심으로 둥글게 28수 별자리가 둘러져 그려 있다. 고려 정종과 문종, 신종 둥 여러 왕
+                     릉에서도 별자리 그림이 발견되고 있어 고인돌 무염 별 그림이 고구려를 거쳐 고려까지 이어졌음을 알 수 있다.
+                     고려시대의 역사를 기록한 '고려사와 [고려사절요.에는 5천여 개의 천문 관측 기록이 남아있다. 
+                     고려시대의 천문 기록은 삼국시대의 것보다 관측 개수도 많고 내용도 상세하게 기록되어 있어 천문 관측이 이전 시대에 비해 더욱 체계적이고 전문적으로 이루어졌음을 알수있다. 
+                     역사 천문 기록은 단순한 역사 기록을 넘어 현대 천문화에 중요한 자료를 제공한다. 
+                     고려시대 흑점과 오로라 관측 기록 연구에 따르면 현재 잘 알려진 11.3년의 태양의 단주기 활동 뿐 아니라 약 100년 주기의 장주기 활동도 새롭게 알려졌다. 
+                     이것은 오랫통안 태양활동을 꾸준히 관즉하고 기록한 우리 조상들의 천문 기록이 있었기에 가능한 결과이다. 
+                     또한고대의 천문 관측 기록은 천체물리학적 연구를 통혜 역사 기록의 사실성 여부를 판단하는자료로 활용될 수 있다. 이러한 사실은 고려시대 천문 기록의 가치와 의미를 잘 보여준다.
+                  </p>
+               </div>
+            </div>
+            <div class="group group04">
+               <h3>조선 시대
+                  <span class="material-symbols-outlined history_more">expand_more</span>
+                  <span class="material-symbols-outlined history_less">expand_less</span>
+               </h3>
+               <div>
+                  <div class="historyMobile_img03 historyMobile_img">
+                     <img src="./images/history04.jpg" alt="신라시대 역사 이미지">
+                  </div>
+                  <p>동양의 전통 별자라를 돌판에 새기다.
+                     조선시대에는 우리 역사에서 가장 많은 천문 관측 기록과 유물이 남아 있다. 
+                     왕실 천문대로는 경복궁 북쪽에 있던 대간의대를 비롯해 왕궁 주변에 세 개의 작은 관천대가 있었다고 알려져 있다. 대간의대는 간의와 정방안을 비롯해 규표와 혼의혼상 등이 함께 설치된 대규모 종합 천문대였으나, 안타깝게도 지금은 그 모습을 찾아 불 수가 없다. 
+                     대간의대의 관측 의기에서 짐작할 수 있듯이 조선시대에는 많은 천문관측 기기를 제작하여 사용하였다. 
+                     특히 세종시대에 집중적으로 천문의기를 제작하었는데 세종 초에는 혼의, 혼상, 간의, 규표 등 중국의 천문의기를 모방하였으나 점차 일성정시의와 소간의와 같은 독창적인 의기를 만들어 사용하였다. 
+                     우리에게 잘 알려진 측우기와 앙부일구 그리고 자격루도 모두 세종대에 만들어진우리의 대표적 과학문화재들이다.
+                     천문대의 설립과 핀측 기기의 개발은 정밀한 관측을 가능하게 하였으며 세중은 마침내우리의 독자적 역법인 칠정산 내ㆍ 외편을 완성하였다. 
+                     뛰어난 천문학자와 과학기술자인 이순지와 김담, 이천과 장영실 등은 천문역법과 서적, 관측기구의 제작을 통해 세종 시대를 우리 전통 천문학의 황금기로 이끌었다. 
+                     세종시대에 편찬된 천문류초와 제가역상집을 비롯해 천문관측 기록집인 성변측후단자와 성번등록은 조선의 활발한 천문할동음 보여주는 일례이다. 
+                     비록 일차 천문관측 기록지인 성변측후단자와 성변등록이 안타깝게 대부분 소실되었지만 조선왕조실록과 증보문헌비고 등에는 조선시대의 천문 현상을 기록한 2만여 개의 다양한 관축 기록이 남아 있다.
+                     한편, 조선 태조 4년(1395)에는 우리 전봉 천문학의 대표적 유물 중 하나인 석각 천상 열치분야지도가 제작되었다.
+                     이 천문도는 우리 밤하늘에서 볼 수 있는 1,467개의 별을 돌에 새겨 만든 것으로 고구려의 천문도가 전해져 만는 것으로 알려졌다. 
+                     천상열차분야지도에 새겨진 별의 위치를 연구한 결과에서도 1세기(고구려)와 14세기(조선초기)의 별이 함께 그려져 있음이 밝혀졌다. 
+                     천상열차분야지도에서 별은 다양한 크기로 새겨져 있는데 이들은 별의 실제 겉보기 등급을 나타내고 있다.
+                     천상열차분야지도는 중국의 소주천문도와 더불어 동양의 전통 별자리를 그린 대표적 석각 천문도로 평가받고 있다.
+                     조선 중기 이후 우리의 전통 천문학은 서양 선교사로부터 중국에 전헤진 서양 천문학의 영향을 받게 된다. 
+                     혼천전도와 황도남북총성도와 같은 천문도와 별의 위치를 목록화한 남병길의 성경그리고 송이영의 혼천시계 등은 모두 서양 천문학의 영향을 받아 만들어진 것들이다.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+   <!-- 역사 -->
+   <div class="sns_outer">
+      <section class="sns">
+         <div class="title titleSns">
+            <p>천문학 소통 공간</p>
+            <div class="sns_link">
+               <a href="#!" class="youtube_icon"><i class="fa-brands fa-youtube"></i></a>
+               <a href="#!" class="insta_icon"><i class="fa-brands fa-instagram"></i></a>
+               <a href="#!" class="facebook_icon"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#!" class="linktree_icon"><i class="fa-solid fa-link"></i></a>
+            </div>
+         </div>
+         <div class="sns_controls">
+            <div class="sns_btn_l sns_btn"></div>
+            <div class="sns_btn_r sns_btn"></div>
+         </div>
+         <ul class="sns_box">
+            <li class="sns_contents01 sns_contents">
+               <div class="sns_img">
+                  <img src="./images/sns01.jpg" alt="50주년 기념 유튜브 썸네일">
+               </div>
+               <div class="sns_info">
+                  <p class="sns_title">
+                     한국 천문연구원 창립 50주년 기념 뮤직비디오 공개 'Shine Like a Star'
+                  </p>
+                  <p class="sns_txt"></p>
+               </div>
+            </li>
+            <li class="sns_contents02 sns_contents">
+               <div class="sns_img">
+                  <img src="./images/sns02.jpg" alt="우주항공청 채용설명회 배너">
+               </div>
+               <div class="sns_info">
+                  <p class="sns_title">
+                     #우주항공청 #인재 #모집 🚀
+                  </p>
+                  <p class="sns_txt">
+                     대한민국의 우주항공 강국 도약을 주도할 인재 모집에 많은 관심 부탁드려요!💞
+                  </p>
+               </div>
+            </li>
+            <li class="sns_contents03 sns_contents">
+               <div class="sns_img">
+                  <img src="./images/sns03.jpg" alt="50주년 기념 유튜브 썸네일">
+               </div>
+               <div class="sns_info">
+                  <p class="sns_title">
+                     올해 가장 작은 보름달!! 미니문을 만나봐요!🌕🎈
+                  </p>
+                  <p class="sns_txt">
+                     2024년 갑진년 정원대보름 보름달이 서울 기준 2월 24일 18:03에 보여요!
+                  </p>
+               </div>
+            </li>
+         </ul>
+      </section>
+      <section class="Qna">
+         <div class="title titleQna">
+            <p>QnA 게시판</p>
+         </div>
+         <div class="Qna_box">
+            <div class="Qna_info_box">
+               <div class="Qna_info01 Qna_info">
+                  <p class="Qna_txt">은하중심에는 정말 블랙홀이있는건가요?</p>
+                  <p class="Qna_date">2024.04.07</p>
+               </div>
+               <div class="Qna_info02 Qna_info">
+                  <p class="Qna_txt">이때까지 발견된 별들 중에서...</p>
+                  <p class="Qna_date">2024.04.03</p>
+               </div>
+               <div class="Qna_info03 Qna_info">
+                  <p class="Qna_txt">공간팽창과 우주팽창의 관계를 알고 싶습니다.</p>
+                  <p class="Qna_date">2024.03.21</p>
+               </div>
+               <div class="Qna_info04 Qna_info">
+                  <p class="Qna_txt">우주가 점점 커진다는데 사실인가요???</p>
+                  <p class="Qna_date">2024.03.09</p>
+               </div>
+               <div class="Qna_info05 Qna_info">
+                  <p class="Qna_txt">우주는 왜 점점 커지나요?</p>
+                  <p class="Qna_date">2024.03.04</p>
+               </div>
+               <!-- <div class="Qna_info06 Qna_info">
+                  <p class="Qna_txt">우주가 점점 커진다는데 사실인가요???</p>
+                  <p class="Qna_date">2024.03.09</p>
+               </div> -->
+            </div>
+            <a href="#!" class="Qna_btn">
+               <p>질문하러가기</p><span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+         </div>
+      </section>
+   </div>
+   <!-- sns -->
+   <div class="observatory_outer">
+      <section class="observatory">
+         <div class="observatory_controls">
+            <div class="observatory_btn_l observatory_btn"></div>
+            <div class="observatory_btn_stop observatory_btn"><span class="material-symbols-outlined">pause</span></div>
+            <div class="observatory_btn_go observatory_btn"><span class="material-symbols-outlined">play_arrow</span></div>
+            <div class="observatory_btn_r observatory_btn"></div>
+         </div>
+         <ul class="observatory_slide">
+            <li><a href="#!"><img src="./images/observatory01.gif" alt="천문우주지식정보"></a></li>
+            <li><a href="#!"><img src="./images/observatory02.gif" alt="보현산천문대"></a></li>
+            <li><a href="#!"><img src="./images/observatory03.gif" alt="소백산천문대"></a></li>
+            <li><a href="#!"><img src="./images/observatory04.gif" alt="레몬산천문대"></a></li>
+            <li><a href="#!"><img src="./images/observatory05.gif" alt="우주환경감시기관"></a></li>
+         </ul>
+         
+      </section>
+   </div>
+   <!-- 천문대 링크 -->
+   <div class="quick">
+      <div class="quick_top">
+         <span class="material-symbols-outlined">keyboard_arrow_up</span>
+      </div>
+      <div class="quick_bottom">
+         <span class="material-symbols-outlined">keyboard_arrow_down</span>
+      </div>
+   </div>
+
+   <footer class="ftr">
+      <div class="ftr_box">
+         <div class="ftr_info">
+            <nav class="ftr_top">
+               <ul>
+                  <li><a href="#!" style="color: #0072cd;">개인정보처리방침</a></li>
+                  <li><a href="#!">영상정보처리기기 운영방침</a></li>
+                  <li><a href="#!">저작권정책</a></li>
+                  <li><a href="#!">RSS</a></li>
+                  <li><a href="#!">고객헌장</a></li>
+                  <li><a href="#!">오시는길</a></li>
+               </ul>
+            </nav>
+            <div class="ftr_center">
+               <p class="ftr_center_txt01">(34055) 대전광역시 유성구 대덕대로 776</p> 
+               <p class="ftr_center_txt02">전화: 080-373-3333(무료)/042-865-3333(유료)</p> 
+               <p class="ftr_center_txt02">천문정보 ARS: 042-865-3332</p> 
+               <p class="ftr_center_txt02">팩스: 042-861-5610</p> 
+            </div>
+            <div class="ftr_bottom">
+               <p>Copyright (C) Korea Astronomy and Space Science Institute. All Rights Reserved.</p>
+            </div>
+         </div>
+         <div class="ftr_img">
+            <div class="ftr_img01">
+               <!-- <img src="./images/footer_mark01.png" alt="웹 접근성 인증마크"> -->
+            </div>
+            <div class="ftr_img02">
+               <img src="./images/footer_mark02.gif" alt="교육기부기관(교육부)">
+            </div>
+            <div class="ftr_img03">
+               <img src="./images/footer_mark03.gif" alt="가족친화인증기관(여성가족부)">
+            </div>
+            <div class="ftr_img04">
+               <img src="./images/footer_mark04.gif" alt="인적자원개발우수기관(한국산업인력공단)">
+            </div>
+         </div>
+      </div>
+   </footer>
+   
+   
+   
+</body>
+</html>

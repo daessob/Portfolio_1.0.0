@@ -1,0 +1,365 @@
+* {margin: 0; padding: 0;}
+a {color: black; text-decoration: none;}
+li {list-style: none;}
+img {display: block; width: 100%; height: auto;}
+
+.quick_menu {
+   display: none;
+   position: fixed;
+   bottom: 100px; right: 20px;
+   z-index: 9999;
+}
+.quick_menu div {
+   width: 50px; height: 50px;
+   border: 1px solid #666; box-sizing: border-box;
+   background-color: white;
+   opacity: 0.9;
+   font-size: 20px;
+   text-align: center; line-height: 48px;
+   color: #666;
+   cursor: pointer;
+}
+.quick_menu div:hover {
+   border-color: #1c5760;
+   background-color: #1c5760;
+   color: white;
+}
+.quick_menu .bookmark {
+   border-bottom: none;
+}
+.quick_menu div i {
+   line-height: 48px;
+}
+
+.hdr_outer {
+   height: 60px;
+   background-color: white;
+   box-shadow: 0 1px 3px #eee;
+}
+.hdr {
+   user-select: none;
+   width: 1300px;
+   margin: 0 auto;
+}
+.hdr:after {
+   content: '';
+   display: block;
+   clear: both;
+}
+/* ~ 로고부분 */
+.hdr .hdr_logo_box {
+   width: 113px;
+   padding: calc((60px - 25px) / 2) 0; 
+   float: left;
+}
+.hdr .hdr_logo_box .hdr_logo {
+   width: 113px; height: 25px;
+}
+
+
+.hdr .hdr_nav {
+   width: calc(1300px - 113px);
+   float: left;
+}
+/* ~ lnb부분 */
+.hdr .hdr_nav .lnb {
+   font-size: 0;
+   padding-left: 20px;
+   float: left;
+}
+.hdr .hdr_nav .lnb>li {
+   display: inline-block;
+   font-size: 16px;
+   line-height: 50px;
+   margin-top: 10px;
+   position: relative;
+}
+.hdr .hdr_nav .lnb li a {
+   display: block;
+   padding: 0 10px;
+}
+.hdr .hdr_nav .lnb li:hover>a {
+   color: #1c5760;
+}
+.hdr .hdr_nav .lnb li .lnb_border {
+   width: 0px; height: 2px;
+   background-color: #1c5760;
+   position: absolute;
+   bottom: 0; left: 10px;
+   transition: all 0.3s;
+}
+.hdr .hdr_nav .lnb li:hover .lnb_border {
+   width: 36px;
+}
+.hdr .hdr_nav .lnb li:hover ~ .lnb_box {
+   height: 300px;
+   border-bottom: 1px solid #eee; box-sizing: border-box;
+}
+.hdr .hdr_nav .lnb .lnb_box {
+   width: 100%; height: 0px;
+   background-color: white;
+   opacity: 0.9;
+   position: absolute;
+   top: 60px; left: 0;
+   z-index: 1;
+   transition: all 0.3s;
+}
+.hdr .hdr_nav .lnb li:hover ul {
+   display: block;
+   animation: ul 0.3s both;
+}
+@keyframes ul {
+   0% {opacity: 0;}
+   30% {opacity: 0;}
+   100% {opacity: 1;}
+}
+.hdr .hdr_nav .lnb li ul {
+   display: none;
+   width: max-content;
+   padding-top: 10px;
+   font-size: 16px;
+   position: absolute;
+   top: 50px; left: 0;
+   z-index: 2;
+}
+.hdr .hdr_nav .lnb li ul li {
+   display: block;
+   line-height: 50px;
+}
+.hdr .hdr_nav .lnb li ul li a {
+   color: black;
+}
+.hdr .hdr_nav .lnb li ul li:hover a {
+   color: #1c5760;
+}
+
+
+/* ~ gnb부분 */
+.hdr .hdr_nav .gnb {
+   font-size: 0;
+   float: right;
+}
+.hdr .hdr_nav .gnb>li {
+   display: inline-block;
+}
+.hdr .hdr_nav .gnb li:hover .material-symbols-rounded {
+   color: #1c5760;
+}
+.hdr .hdr_nav .gnb .hbr_icon {
+   border-right: 0;
+}
+.hdr .hdr_nav .gnb .hbr_icon span {
+   cursor: pointer;
+}
+.hdr .hdr_nav .gnb>li>a {
+   display: block;
+}
+.hdr .hdr_nav .gnb>li .material-symbols-rounded {
+   width: 30px;
+   text-align: center; line-height: 60px;
+}
+
+/* ~ 서치박스 */
+#search_icon {display: none;}
+#search_icon:checked ~ .search_box_outer {
+   height: 350px;
+   border-top: 1px solid #eee; box-sizing: border-box;
+   border-bottom: 1px solid #eee; box-sizing: border-box;
+}
+#search_icon:checked ~ .search_box_outer .search_box {
+   display: block;
+   animation: search_box 0.2s both 0.2s;
+}
+@keyframes search_box {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+.hdr .hdr_nav .gnb .search_icon {
+   cursor: pointer;
+}
+.hdr .hdr_nav .gnb .search_icon label {
+   display: block;
+   cursor: pointer;
+}
+.hdr .hdr_nav .gnb .search_box_outer {
+   width: 100%; height: 0px;
+   background-color: white;
+   position: absolute;
+   top: 60px; right: 0;
+   z-index: 3;
+   transition: all 0.3s;
+}
+.hdr .hdr_nav .gnb .search_box_outer .search_box {
+   display: none;
+   overflow: hidden;
+   width: 1300px;
+   margin: 0 auto;
+   padding: 40px 0;
+}
+.hdr .hdr_nav .gnb .search_box_outer .search_box>p {
+   color: black;
+   font-size: 22px;
+   text-align: center;
+}
+.hdr .hdr_nav .gnb .search_box_outer .search_box .search {
+   width: max-content;
+   margin: 20px auto;
+}
+.hdr .hdr_nav .gnb .search_box_outer .search_box .search input {
+   display: block;
+   height: 40px;
+   text-align: center;
+   width: 300px;
+   border: none;
+   border-bottom: 1px solid black;
+}
+.hdr .hdr_nav .gnb .search_box_outer .search_box .recommend {
+   width: 50%;
+   border-right: 1px solid #eee; box-sizing: border-box;
+   text-align: right;
+   padding: 0 40px;
+   float: left;
+}
+.hdr .hdr_nav .gnb .search_box_outer .search_box .recent {
+   width: 50%;
+   text-align: left;
+   padding: 0 40px; box-sizing: border-box;
+   float: right;
+}
+.hdr .hdr_nav .gnb .search_box_outer .search_box div p {
+   font-family: Gmarketsans_light;
+   font-size: 12px;
+   font-weight: bold;
+   margin-bottom: 5px;
+   color: #666;
+}
+.hdr .hdr_nav .gnb .search_box_outer .search_box div .search_title {
+   font-family: Gmarketsans_medium;
+   font-size: 16px;
+   font-weight: normal;
+   color: black;
+   padding: 0 20px;
+   margin-bottom: 10px;
+}
+
+
+/* ~ 로그인 */
+.hdr .hdr_nav .gnb .login {
+   display: none;
+   color: white;
+   font-family: Gmarketsans_light;
+   font-size: 10px;
+   text-align: center;
+   padding: 5px 10px 3px;
+   border-radius: 5px;
+   background-color: #1f1f1f;
+   opacity: 0.9;
+   position: absolute;
+   top: 50px; left: 50%;
+   margin-left: 530PX;
+   z-index: 4;
+}
+.hdr .hdr_nav .gnb .shopping {
+   display: none;
+   color: white;
+   font-family: Gmarketsans_light;
+   font-size: 10px;
+   text-align: center;
+   padding: 5px 10px 3px;
+   border-radius: 5px;
+   background-color: #1f1f1f;
+   opacity: 0.9;
+   position: absolute;
+   top: 50px; left: 50%;
+   margin-left: 575px;
+   z-index: 4;
+}
+.hdr .hdr_nav .gnb .user_icon:hover .login {
+   display: block;
+   animation: gnb 0.2s both;
+}
+.hdr .hdr_nav .gnb .shopping_icon:hover .shopping {
+   display: block;
+   animation: gnb 0.2s both;
+}
+@keyframes gnb {
+   0% {opacity: 0;}
+   100% {opacity: 0.9;}
+}
+
+/* ~ 사이트맵 */
+.hdr .hdr_nav .gnb .sitemap_outer {
+   display: none;
+   width: 100%; height: 300px;
+   background-color: white;
+   position: absolute;
+   top: 60px; left: 0;
+   z-index: 3;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap {
+   overflow: hidden;
+   width: 1300px; height: 300px;
+   padding: 40px 0; box-sizing: border-box;
+   margin: 0 auto;
+}
+
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .menu {
+   width: 970px;
+   overflow: hidden;
+   text-align: center;
+   margin-bottom: 20px;
+   float: left;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .all {
+   width: 230px;
+   border-left: 1px solid #eee; box-sizing: border-box;
+   float: right;
+}
+
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .menu>li {
+   width: calc(970px / 6); 
+   font-size: 20px;
+   float: left;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .all li{
+   width: 230px;
+   font-size: 18px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .all li a {
+   display: inline-block;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .all li a .sitemap_border {
+   width: 0; height: 1px;
+   background-color: #1f1f1f;
+   transition: all 0.2s;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .all li:hover a .sitemap_border {
+   width: 100%; 
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .menu>li>a {
+   display: inline-block;
+   margin-bottom: 30px;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .menu>li:hover>a {
+   font-weight: bold;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .menu>li>ul li {
+   font-family: Gmarketsans_light;
+   font-weight: bold;
+   font-size: 16px;
+   margin-bottom: 20px;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .menu>li>ul li a {
+   display: inline-block;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .menu>li>ul li a .sitemap_border {
+   width: 0; height: 1px;
+   background-color: #1f1f1f;
+   transition: all 0.2s;
+}
+.hdr .hdr_nav .gnb .sitemap_outer .sitemap .menu>li>ul li a:hover .sitemap_border {
+   width: 100%; 
+}
+

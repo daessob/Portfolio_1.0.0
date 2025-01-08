@@ -1,0 +1,117 @@
+* {margin: 0; padding: 0;}
+a {color: black; text-decoration: none;}
+li {list-style: none;}
+img {display: block; width: 100%; height: auto;}
+
+.footer_outer {
+    background-color: #313131;
+}
+.footer {
+    width: 1300px;
+    padding: 60px 0;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.footer .logo_box {
+    overflow: hidden;
+}
+.footer .logo_box .ftr_logo {
+    width: 98px; height: 22px;
+    float: left;
+}
+.footer .logo_box .ftr_sns {
+    height: 22px;
+    font-size: 0;
+    float: right;
+}
+.footer .logo_box .ftr_sns a {
+    display: block;
+    height: 22px; width: 22px;
+    font-size: 20px;
+    color: #ccc;
+    text-align: center; line-height: 22px;
+    padding: 0 10px;
+    float: left;
+}
+
+.footer .footer_info {
+    font-family: Gmarkersans_light;
+    font-size: 14px;
+    margin: 40px 0;
+    color: #ccc;
+    overflow: hidden;
+}
+.footer .footer_info>div {
+    float: left;
+}
+.footer .footer_info .footer_info_l {
+    width: calc(1300px - 530px);
+    padding-top: 5px;
+}
+.footer .footer_info .footer_info_l .info_box_l {
+    width: max-content;
+    float: left;
+    margin-right: 80px;
+}
+
+
+.footer .footer_info .footer_info_c {
+    width: 265px; height: 130px;
+    border-left: 1px solid #ccc; box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 20px; 
+}
+.footer .footer_info .footer_info_c .call {
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .footer_info .footer_info_r {
+    width: 265px; height: 130px;
+    border-left: 1px solid #ccc; box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.footer .footer_info .footer_info_r p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.footer .footer_info .footer_info_r p a {
+    color: #ccc;
+}
+
+.footer .footer_info div .footer_info_title {
+    font-family: Gmarketsans_medium;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer .ftr_menu {overflow: hidden;}
+.footer .ftr_menu ul {
+    float: left;
+    font-size: 0;
+}
+.footer .ftr_menu ul li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 20px;
+}
+.footer .ftr_menu ul li:first-child {
+    padding-left: 0;
+}
+.footer .ftr_menu ul li a {
+    display: block;
+    color: #ccc;
+}
+.footer .ftr_menu p {
+    color: #ccc;
+    font-size: 10px;
+    font-family: Gmarketsans_light;
+    font-weight: normal;
+    float: right;
+    margin-top: 7px;
+}

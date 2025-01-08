@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>침대 ｜ EASEIN</title>
+   <link rel="stylesheet" href="../css/header.css">
+   <link rel="stylesheet" href="../css/subpage.css">
+   <link rel="stylesheet" href="../css/footer.css">
+   <script src="../js/jquery-3.7.1.min.js"></script>
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+   <!-- google icon -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- fontawesome -->
+   <script>
+      $(function(){
+         $(window).scroll(function(){
+            if($(this).scrollTop() >= 400) {
+               $('.quick_menu').stop().fadeIn('fast')
+            } else {
+               $('.quick_menu').stop().fadeOut('fast')
+            }
+         })
+
+         // let bottom = $(document).height() //문서의 가장 아래로 가는 값
+         $('.quick_menu .top_btn').click(function(){
+            $('html, body').stop().animate({
+               scrollTop: 0
+            }, 500)
+         })//quickmenu
+
+         //햄버거 버튼
+         const hbr_btn = '.hdr .hdr_nav .gnb .hbr_icon'
+         const hbr_box = '.hdr .hdr_nav .gnb .sitemap_outer'
+
+         $(hbr_btn).click(function(){
+            $(hbr_box).slideToggle('fast')
+         })
+         $(hbr_box).mouseleave(function(){
+            $(this).slideUp('fast')
+         })
+
+
+         $('.bedroom_btn').click(function(){
+            if($('input[name=menu_list]').is(':checked')) {
+               $('input[name=menu_list]').prop('checked',false)
+            }
+         })
+         $('.dressroom_btn').click(function(){
+            if($('input[name=menu_list]').is(':checked')) {
+               $('input[name=menu_list]').prop('checked',false)
+            }
+         })
+         $('.livingroom_btn').click(function(){
+            if($('input[name=menu_list]').is(':checked')) {
+               $('input[name=menu_list]').prop('checked',false)
+            }
+         })
+         $('.library_btn').click(function(){
+            if($('input[name=menu_list]').is(':checked')) {
+               $('input[name=menu_list]').prop('checked',false)
+            }
+         })
+         $('.kitchen_btn').click(function(){
+            if($('input[name=menu_list]').is(':checked')) {
+               $('input[name=menu_list]').prop('checked',false)
+            }
+         })
+      })
+   </script>
+
+   <style>
+      @font-face {
+         font-family: "Gmarketsans_light";
+         src: url(../fonts/GmarketSansLight.otf);
+      }
+      @font-face {
+         font-family: "Gmarketsans_medium";
+         src: url(../fonts/GmarketSansMedium.otf);
+      }
+   </style>
+</head>
+<body style="font-family: Gmarketsans_medium;">
+   <div class="quick_menu">
+      <div class="bookmark"><i class="fa-regular fa-bookmark"></i></div>
+      <div class="top_btn"><i class="fa-solid fa-angle-up"></i></div>
+   </div>
+
+   <header class="hdr_outer">
+      <div class="hdr">
+         <div class="hdr_logo_box">
+            <div class="hdr_logo">
+               <a href="../index.html"><img src="../images/logo.svg" alt="easein_logo"></a>
+            </div>
+         </div>
+         <nav class="hdr_nav">
+            <ul class="lnb">
+               <li class="bed"><a href="#!">침실</a>
+                  <div class="lnb_border"></div>
+                  <ul>
+                     <li><a href="../subpage/bedroom_bed.html">침대</a></li>
+                     <li><a href="#!">매트리스</a></li>
+                     <li><a href="#!">화장대</a></li>
+                     <li><a href="#!">거울</a></li>
+                  </ul>
+               </li>
+               
+               <li class="dress"><a href="#!">옷장</a>
+                  <div class="lnb_border"></div>
+                  
+                  <ul>
+                     <li><a href="#!">옷장/붙박이장</a></li>
+                  </ul>
+               </li>
+
+               <li class="living"><a href="#!">거실</a>
+                  <div class="lnb_border"></div>
+                  <ul>
+                     <li><a href="#!">테이블</a></li>
+                     <li><a href="#!">소파</a></li>
+                     <li><a href="#!">거실장</a></li>
+                  </ul>
+               </li>
+
+               <li class="library"><a href="#!">서재</a>
+                  <div class="lnb_border"></div>
+                  <ul>
+                     <li><a href="#!">책장</a></li>
+                     <li><a href="#!">책상</a></li>
+                     <li><a href="#!">의자</a></li>
+                     <li><a href="#!">서랍장</a></li>
+                  </ul>
+               </li>
+
+               <li class="kitchen"><a href="#">주방</a>
+                  <div class="lnb_border"></div>
+                  <ul>
+                     <li><a href="#!">식탁</a></li>
+                     <li><a href="#!">의자</a></li>
+                     <li><a href="#!">수납장</a></li>
+                  </ul>
+               </li>
+               <div class="lnb_box"></div>
+               
+               <li><a href="#!">키즈</a>
+                  <div class="lnb_border"></div>
+               </li>
+            </ul>
+
+            
+            <ul class="gnb">
+               <input type="checkbox" name="search_icon" id="search_icon">
+               <li class="search_icon">
+                  <label for="search_icon">
+                     <span class="material-symbols-rounded">search</span>
+                  </label>
+               </li>
+               <div class="search_box_outer">
+                  <div class="search_box">
+                     <p>어떤 가구를 보고 싶으신가요?</p>
+                     <div class="search">
+                        <input type="search" name="search" id="search" placeholder="검색어를 입력해주세요.">
+                     </div>
+                     <div class="recommend">
+                        <p class="search_title">추천 제품</p>
+                        <p># 로이 뮤트 에디션_with RM</p>
+                        <p># 결제 금액의 일부 페이백_프로모션</p>
+                        <p># 신학기 학생방 가구_프로모션</p>
+                        <p>#아이와 함께 자라는 키즈룸</p>
+                        <p># 거실을 다이닝룸으로_식탁의 해방</p>
+                     </div>
+                     <div class="recent">
+                        <p class="search_title">최근 검색어</p>
+                        <p><a href="#!"># 베른 원목 침대 프레임</a></p>
+                        <p># 아일랜드 식탁</p>
+                        <p># 1600 컴퓨터 책상</p>
+                        <p></p>
+                        <p></p>
+                     </div>
+                     
+                  </div>
+               </div>
+
+               <li class="user_icon">
+                  <a href="#!"><span class="material-symbols-rounded">person</span></a>
+                  <div class="login">로그인/회원가입</div>
+               </li>
+               
+
+               <li class="shopping_icon">
+                  <a href="#!"><span class="material-symbols-rounded">shopping_bag</span></a>
+                  <div class="shopping">장바구니</div>
+               </li>
+               
+
+               <li class="hbr_icon">
+                  <span class="material-symbols-rounded">menu</span>
+                  <div class="sitemap_outer">
+                     <div class="sitemap">
+                        <ul class="menu">
+                           <li><a href="#!">침실</a>
+                              <ul>
+                                 <li><a href="../subpage/bedroom_bed.html">침대<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">매트리스<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">화장대<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">거울<div class="sitemap_border"></div></a></li>
+                              </ul>
+                           </li>
+         
+                           <li><a href="#!">옷장</a>
+                              <ul>
+                                 <li><a href="#!">옷장/붙박이장<div class="sitemap_border"></div></a></li>
+                              </ul>
+                           </li>
+         
+                           <li><a href="#!">거실</a>
+                              <ul>
+                                 <li><a href="#!">테이블<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">소파<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">거실장<div class="sitemap_border"></div></a></li>
+                              </ul>
+                           </li>
+         
+                           <li><a href="#!">서재</a>
+                              <ul>
+                                 <li><a href="#!">책장<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">책상<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">의자<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">서랍장<div class="sitemap_border"></div></a></li>
+                              </ul>
+                           </li>
+         
+                           <li><a href="#!">주방</a>
+                              <ul>
+                                 <li><a href="#!">식탁<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">의자<div class="sitemap_border"></div></a></li>
+                                 <li><a href="#!">수납장<div class="sitemap_border"></div></a></li>
+                              </ul>
+                           </li>
+         
+                           <li><a href="#!">키즈</a>
+                           </li>
+                        </ul>
+      
+                        <ul class="all">
+                           <li><a href="#!">전체보기<div class="sitemap_border"></div></a>
+                           <li><a href="#!">공지사항<div class="sitemap_border"></div></a></li>
+                           <li><a href="#!">이벤트<div class="sitemap_border"></div></a></li>
+                           <li><a href="#!">회사소개<div class="sitemap_border"></div></a></li>
+                           <li><a href="#!">고객센터<div class="sitemap_border"></div></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="sitemap_bg" style="display: none;">ds</div>
+               </li>
+               
+
+            </ul>
+            
+         </nav>
+      </div>
+   </header>
+   <!-- 헤더 -->
+
+   <div class="wrap">
+      <aside class="aside">
+         <nav class="subpage_menu">
+            <ul>
+               <input type="checkbox" name="menu_list" id="bedroom" checked>
+               <input type="checkbox" name="menu_list" id="dressroom">
+               <input type="checkbox" name="menu_list" id="livingroom">
+               <input type="checkbox" name="menu_list" id="library">
+               <input type="checkbox" name="menu_list" id="kitchen">
+
+               <li class="subpage_menu_all">
+                  <a href="#!">전체보기</a>
+               </li>
+
+               <li class="bedroom">
+                  <a href="#!">침실</a>
+                  <label for="bedroom" class="menu_btn bedroom_btn"><i class="fa-solid fa-plus"></i></label>
+                  <label for="bedroom" class="menu_btn_checked"><i class="fa-solid fa-minus"></i></label>
+                  <ul>
+                     <li><a href="../subpage/bedroom_bed.html">침대</a></li>
+                     <li><a href="#!">매트리스</a></li>
+                     <li><a href="#!">화장대</a></li>
+                     <li><a href="#!">거울</a></li>
+                  </ul>
+               </li>
+               
+               <li class="dressroom">
+                  <a href="#!">옷장</a>
+                  <label for="dressroom" class="menu_btn dressroom_btn"><i class="fa-solid fa-plus"></i></label>
+                  <label for="dressroom" class="menu_btn_checked"><i class="fa-solid fa-minus"></i></label>
+                  <ul>
+                     <li><a href="#!">옷장 / 붙박이장</a></li>
+                  </ul>
+               </li>
+
+               <li class="livingroom">
+                  <a href="#!">거실</a>
+                  <label for="livingroom" class="menu_btn livingroom_btn"><i class="fa-solid fa-plus"></i></label>
+                  <label for="livingroom" class="menu_btn_checked"><i class="fa-solid fa-minus"></i></label>
+                  <ul>
+                     <li><a href="#!">테이블</a></li>
+                     <li><a href="#!">소파</a></li>
+                     <li><a href="#!">거실장</a></li>
+                  </ul>
+               </li>
+
+               <li class="library">
+                  <a href="#!">서재</a>
+                  <label for="library" class="menu_btn library_btn"><i class="fa-solid fa-plus"></i></label>
+                  <label for="library" class="menu_btn_checked"><i class="fa-solid fa-minus"></i></label>
+                  <ul>
+                     <li><a href="#!">책장</a></li>
+                     <li><a href="#!">책상</a></li>
+                     <li><a href="#!">의자</a></li>
+                     <li><a href="#!">서랍장</a></li>
+                  </ul>
+               </li>
+
+               <li class="kitchen">
+                  <a href="#!">주방</a>
+                  <label for="kitchen" class="menu_btn kitchen_btn"><i class="fa-solid fa-plus"></i></label>
+                  <label for="kitchen" class="menu_btn_checked"><i class="fa-solid fa-minus"></i></label>
+                  <ul>
+                     <li><a href="#!">식탁</a></li>
+                     <li><a href="#!">의자</a></li>
+                     <li><a href="#!">수납장</a></li>
+                  </ul>
+               </li>
+
+               <li class="kids">
+                  <a href="#!">키즈</a>
+               </li>
+
+            </ul>
+         </nav>
+      </aside>
+      <!-- aside메뉴 -->
+
+      <div class="subpage_bed">
+         <div class="sub_bnr">
+            <img src="../images/subpage_subbnr.jpg" alt="서브배너">
+         </div>
+         <nav class="breadcrumb_box">
+            <ul class="breadcrumb">
+               <li><a href="#!"><i class="material-symbols-rounded">home</i></a></li>
+               <p><i class="fa-solid fa-angle-right"></i></p>
+               <li><a href="#!">침실</a></li>
+               <p><i class="fa-solid fa-angle-right"></i></p>
+               <li><a href="#!">침대</a></li>
+            </ul>
+            <ul class="order">
+               <li><a href="#!" style="color: #1c5760;">인기순</a></li>
+               <li><a href="#!">신상품순</a></li>
+               <li><a href="#!">높은가격순</a></li>
+               <li><a href="#!">낮은가격순</a></li>
+               <li><a href="#!">상품명순</a></li>
+            </ul>
+         </nav>
+
+         <div class="bed_product_box">
+            <div class="bed_product_firstLine bed_product_Line">
+               <div class="product_box">
+                  <div class="product_img">
+                     <a href="../detail/detail.html">
+                        <img src="./images/product_bed01.jpg" alt="침대01">
+                        <input type="checkbox" name="product_bookmark" id="product_bookmark01">
+                        <div class="product_hover">
+                           <label for="product_bookmark01" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                           <label for="product_bookmark01" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                        </div>
+                     </a>
+                  </div>
+                  <p class="product_name">베른 애쉬원목 침대 프레임</p>
+                  <p class="product_sale">40% <span>574,000 원</span></p>
+                  <p class="product_price">344,400 원</p>
+               </div>
+
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed02.jpg" alt="침대02">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark02">
+                     <div class="product_hover">
+                        <label for="product_bookmark02" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark02" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">LED 조명 호텔 침대 프레임 SS</p>
+                  <p class="product_sale">45% <span>669,000 원</span></p>
+                  <p class="product_price">299,000 원</p>
+               </div>
+
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed03.jpg" alt="침대03">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark03">
+                     <div class="product_hover">
+                        <label for="product_bookmark03" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark03" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">아임빅 수납침대 S 기본헤드형</p>
+                  <p class="product_sale">15% <span>296,000 원</span></p>
+                  <p class="product_price">251,000 원</p>
+               </div>
+            </div>
+            <!-- 첫번째줄 -->
+
+            <div class="bed_product_secondLine bed_product_Line">
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed04.jpg" alt="침대04">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark04">
+                     <div class="product_hover">
+                        <label for="product_bookmark04" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark04" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">헤드리스 평상형 침대프레임 + 협탁 증정</p>
+                  <p class="product_sale">54% <span>249,000 원</span></p>
+                  <p class="product_price">112,700 원</p>
+               </div>
+
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed05.jpg" alt="침대05">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark05">
+                     <div class="product_hover">
+                        <label for="product_bookmark05" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark05" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">프리미엄 LED 수납 호텔 침대프레임</p>
+                  <p class="product_sale">28% <span>549,000 원</span></p>
+                  <p class="product_price">395,200 원</p>
+               </div>
+
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed06.jpg" alt="침대06">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark06">
+                     <div class="product_hover">
+                        <label for="product_bookmark06" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark06" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">토스트 월넛 침대 프레임 SS 기본형</p>
+                  <p class="product_sale">15% <span>335,000 원</span></p>
+                  <p class="product_price">284,700 원</p>
+               </div>
+            </div>
+
+            <div class="bed_product_thirdLine bed_product_Line">
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed07.jpg" alt="침대07">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark07">
+                     <div class="product_hover">
+                        <label for="product_bookmark07" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark07" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">플레인 침대프레임 SS 서랍형</p>
+                  <p class="product_sale">9% <span>219,000 원</span></p>
+                  <p class="product_price">199,000 원</p>
+               </div>
+
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed08.jpg" alt="침대08">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark08">
+                     <div class="product_hover">
+                        <label for="product_bookmark08" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark08" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">마틴L 원목 침대프레임 SS</p>
+                  <p class="product_sale">31% <span>159,000 원</span></p>
+                  <p class="product_price">109,000 원</p>
+               </div>
+
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed09.jpg" alt="침대09">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark09">
+                     <div class="product_hover">
+                        <label for="product_bookmark09" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark09" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">오우드 원목 침대 패브릭헤드형</p>
+                  <p class="product_sale">45% <span>654,000 원</span></p>
+                  <p class="product_price">359,000 원</p>
+               </div>
+            </div>
+         
+            <div class="bed_product_fourthLine bed_product_Line">
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed10.jpg" alt="침대10">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark10">
+                     <div class="product_hover">
+                        <label for="product_bookmark10" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark10" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">호텔 수납형 침대프레임 LED조명</p>
+                  <p class="product_sale">43% <span>439,000 원</span></p>
+                  <p class="product_price">249,000 원</p>
+               </div>
+
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed11.jpg" alt="침대11">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark11">
+                     <div class="product_hover">
+                        <label for="product_bookmark11" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark11" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">헤이즐 무헤드 침대프레임 SS</p>
+                  <p class="product_sale">18% <span>219,000 원</span></p>
+                  <p class="product_price">179,000 원</p>
+               </div>
+
+               <div class="product_box">
+                  <div class="product_img">
+                     <img src="./images/product_bed12.jpg" alt="침대12">
+                     <input type="checkbox" name="product_bookmark" id="product_bookmark12">
+                     <div class="product_hover">
+                        <label for="product_bookmark12" class="product_hover_icon"><i class="fa-regular fa-bookmark"></i></label>
+                        <label for="product_bookmark12" class="product_hover_icon_checked"><i class="fa-solid fa-bookmark"></i></label>
+                     </div>
+                  </div>
+                  <p class="product_name">저상형 침대 벙커 수납침대 SS</p>
+                  <p class="product_sale">40% <span>339,000 원</span></p>
+                  <p class="product_price">239,000 원</p>
+               </div>
+            </div>
+         </div>
+         <div class="subpage_bed_pagination">
+            <a href="#!"><i class="fa-solid fa-angles-left"></i></a>
+            <a href="#!"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#!" class="subpage_bed_pagination_select">1</a>
+            <a href="#!">2</a>
+            <a href="#!">3</a>
+            <a href="#!"><i class="fa-solid fa-angle-right"></i></a>
+            <a href="#!"><i class="fa-solid fa-angles-right"></i></a>
+         </div>
+      </div>
+   </div>
+   <!-- 컨텐츠 영역 -->
+
+   <div class="footer_outer">
+      <footer class="footer">
+         <div class="logo_box">
+            <div class="ftr_logo">
+               <img src="../images/ftr_logo.png" alt="ftr_logo">
+            </div>
+            <div class="ftr_sns">
+               <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+               <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#!"><i class="fa-brands fa-youtube"></i></a>
+               <a href="#!"><img src="../images/naverBlog.png" alt=""></a>
+            </div>
+         </div>
+         <div class="footer_info">
+            <div class="footer_info_l">
+               <p class="footer_info_title">(주) 이즈인 퍼니처</p>
+               <div class="info_box_l">
+                  <p>대표 : 김대섭</p>
+                  <p>주소 : 서울 서초구 방배중앙로 134-2</p>
+                  <p>통신판매업신고 : 제 2024-서울서초-0123호</p>
+               </div>
+               <div class="info_box_r">
+                  <p>이메일 : easein01@naver.com</p>
+                  <p>사업자등록번호 : 132-54-79823</p>
+               </div>
+               
+            </div>
+            <div class="footer_info_c">
+               <p class="footer_info_title">고객 센터</p>
+               <p class="call">1899 - 1234</p>
+               <p>월~금 09:00-17:30</p>
+               <p>토,일 공휴일 휴무</p>
+            </div>
+            <div class="footer_info_r">
+               <p class="footer_info_title"><a href="#!">공지 사항</a></p>
+               <p><a href="#!">· SNS 후기 이벤트 당첨자 발표</a></p>
+               <p><a href="#!">· [안내] 2024년 3월 카드사 무이자 할부 목록</a></p>
+               <p><a href="#!">· [안내] 2024년 2월 카드사 무이자 할부 목록</a></p>
+               <p><a href="#!">· [안내] 2024년 1월 카드사 무이자 할부 목록</a></p>
+            </div>
+         </div>
+         <nav class="ftr_menu">
+            <ul>
+               <li><a href="#!">이용약관</a></li>
+               <li><a href="#!">개인정보취급방침</a></li>
+               <li><a href="#!">브랜드소개</a></li>
+               <li><a href="#!">이용안내</a></li>
+            </ul>
+            <p>copyright (c) www.easein.com all rights reserved.</p>
+         </nav>
+      </footer>
+   </div>
+</body>
+</html>

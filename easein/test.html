@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <style>
+      * {
+         margin: 0; padding: 0;
+      }
+      ::selection {
+         background: #fff;
+         color: #1B191C;
+      }
+      body {
+         background-color: #1B191C;
+      }
+      p {
+       font-size: 46px;
+       font-weight: bold;
+       position: fixed;
+       font-family: "Montserrat", sans-serif;
+       top: 100px; left: 50%;
+       color: white;
+       text-shadow: none;
+       opacity: 0.3;
+       animation: profile 3s both 3s;
+       z-index: 1;
+      }
+      @keyframes profile {
+         0% {
+            font-size: 46px;
+            font-weight: bold;
+            text-shadow: none;
+         }
+         80% {
+            font-size: 150px;
+            left: 10px;
+            color: white;
+            text-shadow: none;
+         }
+         100% {
+            font-size: 150px;
+            left: 10px;
+            color: #1B191C;
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+         }
+      }
+      .text {
+         font-size: 130px;
+         text-align: center;
+         margin-top: 200px;
+         opacity: 0;
+         animation: hi 2s both 6s;
+      }
+      @keyframes hi {
+         0% {
+            opacity: 0;
+         }
+         100% {
+            opacity: 1;
+         }
+      }
+
+      .line {
+         width: 300px; height: 300px;
+         background-color: #0265DC;
+         border-radius: 50%;
+         position: fixed;
+         top: calc(50% - 150px); left: calc(50% - 150px);
+         animation: line 5s both 1s;
+      }
+      @keyframes line {
+         0% {
+            width: 400px; height: 400px;
+            top: calc(50% - 150px); left: calc(50% - 150px);
+            border-radius: 50%;
+         }
+         30% {
+            width: 20px; height: 20px;
+            top: calc(50% - 10px); left: calc(50% - 10px);
+            border-radius: 50%;
+         }
+         40% {
+            width: 20px; height: 20px;
+            top: calc(50% - 10px); left: calc(50% - 10px);
+            border-radius: 0%;
+         }
+         60% {
+            width: 300px; height: 20px;
+            top: calc(50% - 10px); left: calc(50% - 150px);
+            border-radius: 0%;
+         }
+         80% {
+            width: 300px; height: 300px;
+            top: calc(50% - 150px); left: calc(50% - 150px);
+            border-radius: 0%;
+            opacity: 0.7;
+         }
+         100% {
+            opacity: 0.7;
+            border-radius: 0%;
+         }
+      }
+      .line01 {
+         width: 100vw; height: 1px;
+         background-color: #666;
+         opacity: 0.3;
+         position: absolute;
+         z-index: 9999;
+         user-select: none;
+      }
+      .line02 {   
+         width: 1px; height: 100vh;
+         background-color: #666;
+         opacity: 0.3;
+         position: absolute;
+         z-index: 9999;
+         user-select: none;
+      }
+   </style>
+   <script>
+      document.addEventListener('mousemove', (e) => {
+         let mouseX = e.pageX
+         let mouseY = e.pageY
+         
+         document.querySelector('.line01').style.top = mouseY + 'px'
+         document.querySelector('.line01').style.left = (mouseX + 'px') + '100vw'
+         document.querySelector('.line02').style.top = (mouseY + 'px') + '100vh'
+         document.querySelector('.line02').style.left = mouseX + 'px'
+      })
+   </script>
+</head>
+<body>
+   <p>Profile</p>
+   <div class="text">
+      안녕 어쩌구 저쩌구 
+   </div>
+
+   <div class="line"></div>
+
+   <div class="cursor">
+      <div class="line01"></div>
+      <div class="line02"></div>
+   </div>
+
+<div class="showroom_box">
+   <ul class="showroom_inner">
+      <li class="showroom_img showroom01">
+      </li>
+      <!-- 01_쇼룸이미지 -->
+         
+      <li class="showroom_img showroom02">
+      </li>
+      <!-- 02_쇼룸이미지 -->
+
+      <li class="showroom_img showroom03">
+      </li>
+      <!-- 03_쇼룸이미지 -->
+
+      <li class="showroom_img showroom04">
+      </li>
+      <!-- 04_쇼룸이미지 -->
+
+      <li class="showroom_img showroom05">
+      </li>
+      <!-- 05_쇼룸이미지 -->
+   </ul>
+   <div class="showroom_l_btn"><span class="material-symbols-sharp">navigate_before</span></div>
+   <div class="showroom_r_btn"><span class="material-symbols-sharp">navigate_next</span></div>
+</div>   
+</body>
+</html>

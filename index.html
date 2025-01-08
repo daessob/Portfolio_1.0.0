@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>김대섭 포트폴리오</title>
+
+   <link rel="stylesheet" as="style" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+   <!-- 한글폰트 -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <!-- 영문폰트 -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <!-- 구글 아이콘 -->
+
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/codeReview.css">
+
+   <script src="./js/main.js" defer></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+   <!-- Gsap -->
+
+   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+   <!-- 부드러운 스크롤 -->
+
+</head>
+
+<body>
+   <header class="hdr">
+      <h1>KimDaeSeop Portfolio</h1>
+      <ul>
+         <li><a href="#!">Profile</a></li>
+         <li><a href="#!">Project</a></li>
+         <li><a href="#!">Design</a></li>
+         <li><a href="#!">Contect</a></li>
+      </ul>
+   </header>
+
+
+   <section class="intro box_evt panel">
+      <div class="intro01">
+         <p class="intro_subtitle">
+            점이 모여 선이 되고 <br>
+            선이 모여 면이 됩니다. <br><br>
+            면이 모여 입체적인 도형이 되기까지
+         </p>
+         <p class="intro_title">
+            입체적이고 싶은 <br>
+            신입 웹 퍼블리셔 <span>김대섭</span> 입니다.
+         </p>
+         <p class="intro_introduce">
+            본 사이트는 개인 포트폴리오 용도로 제작된 것입니다. 상업적인 용도로 사용되지 않습니다.
+         </p>
+         <div class="intro_scroll">
+            <P style="margin-bottom: 10px; color: #ccc; width: 60px; transform: translate(-22%, 0%);">Scroll</P>
+            <div class="mousey">
+               <div class="scroller"></div>
+             </div>
+         </div>
+      </div>
+      <div class="intro02 intro_txt">
+         모든 일에는 기초와 기본이 중요하다는 것을 알고 있습니다.
+      </div>
+      <div class="intro03 intro_txt">
+         <span>점과 선이 모여 면이 된 것처럼,</span> <br /><br />
+         기본적인 지식과 기술을 바탕으로 <br />
+         항상 사용자를 생각하며 편리하고 효율적인 웹을 제공하겠습니다.
+      </div>
+      <div class="intro04 intro_txt">
+         더 나아가 면이 <span>입체적인 도형</span>이 되기까지, <br>
+         더욱 공부하고 소통하며 성장을 멈추지 않는 사람이 되겠습니다.
+      </div>
+
+      <div class="pin"></div>
+      <div class="bg_dimmed"></div>
+   </section>
+
+   <section class="profile box_evt panel">
+      <div class="title profile_txt">Profile</div>
+      <div class="profile_l">
+         <div class="name_kr">김대섭</div>
+         <div class="name_en">KimDaeSeop</div>
+         <div class="myimg">
+            <img src="./images/my.png" alt="내 사진">
+         </div>
+         <p><span>생년월일</span>1999.07.11</p>
+         <p><span>전화번호</span>010-6411-5682</p>
+         <p><span>거주지</span>부산광역시 북구 제 구포3동</p>
+         <p><span>취미</span>드라이브 , 여행 , 세차</p>
+      </div>
+      <div class="profile_r">
+         <div class="acti">
+            <h3>Activity</h3>
+            <p><span>2023.12 ~ 2024.05</span>[NCS] UI/UX 반응형 웹디자인&웹퍼블리셔 과정 수료</p>
+            <p><span>2022.08 ~ 2023.11</span>이디야 고객 응대 및 음료 제조</p>
+            <p><span>2015.03 ~ 2018.02</span>성도고등학교 졸업</p>
+         </div>
+         <div class="cert">
+            <h3>Certification</h3>
+            <p><span>2015.03 ~ 2018.02</span>자동차 운전 면허증 1종 보통 취득</p>
+         </div>
+         <h3>Skill</h3>
+         <div class="skill">
+
+            <div class="skill_html">
+               <div class="icon_img"><img src="./images/html_icon.png" alt="html아이콘"></div>
+               <div class="skill_per">100%</div>
+               <div class="skill_bar"></div>
+            </div>
+            <div class="skill_css">
+               <div class="icon_img"><img src="./images/css_icon.png" alt="css아이콘"></div>
+               <div class="skill_per">95%</div>
+               <div class="skill_bar"></div>
+            </div>
+            <div class="skill_jQuery">
+               <div class="icon_img"><img src="./images/jquery_icon.png" alt="jQuery아이콘"></div>
+               <div class="skill_per">85%</div>
+               <div class="skill_bar"></div>
+            </div>
+            <div class="skill_java">
+               <div class="icon_img"><img src="./images/java_icon.png" alt="JavaScript아이콘"></div>
+               <div class="skill_per">70%</div>
+               <div class="skill_bar"></div>
+            </div>
+            <div class="skill_figma">
+               <div class="icon_img"><img src="./images/figma_icon.png" alt="Figma아이콘"></div>
+               <div class="skill_per">70%</div>
+               <div class="skill_bar"></div>
+            </div>
+            <div class="skill_Ps">
+               <div class="icon_img"><img src="./images/ps_icon.png" alt="PhotoShop아이콘"></div>
+               <div class="skill_per">70%</div>
+               <div class="skill_bar"></div>
+            </div>
+            <div class="skill_Ai">
+               <div class="icon_img"><img src="./images/Ai_icon.png" alt="illustrator아이콘"></div>
+               <div class="skill_per">70%</div>
+               <div class="skill_bar"></div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="project panel">
+      <div class="project_txt">Project</div>
+         <div class="card_box card01">
+            <div style="overflow: hidden;">
+               <div class="card_img"><img src="./images/easein_mockup.png" alt="쇼핑몰 프로젝트 목업"></div>
+               <div class="card_info">
+                  <p class="card_title">EASEIN 가구 쇼핑몰<span>적응형 웹사이트</span></p>
+                  <p class="card_txt"><span>제작페이지</span>mainpage, subpage * 1, detailpage * 1</p>
+                  <p class="card_txt"><span>글꼴</span>Gmarket Sans, Lato</p>
+                  <p class="card_txt card_txt01"><span>색상</span><span class="easein_color01 color"></span><span class="easein_color02 color"></span></p>
+                  <p class="card_txt"><span>도구</span>HTML, CSS, jQuery</p>
+                  <div class="btn01 btn" onclick="easein_project()">기획서</div>
+                  <div class="btn02 btn"><a href="./easein/index.html" target="_blank">웹사이트</a></div>
+                  <div class="btn03 btn" onclick="easein_popup()">구현코드</div>
+               </div>
+            </div>
+            <div>
+               <div class="card_t">
+                  <p>방향성</p>
+                  <p>심플하고 따뜻한 느낌의 가구 쇼핑몰</p>
+               </div>
+               <div class="card_c">
+                  <p>개발 과정</p>
+                  <p>포토샵과 일러스트를 활용하여 브랜드로고와 배너등등 제작<br>
+                     Slick, BxSlider 사용
+                  </p>
+               </div>   
+               <div class="card_b">
+                  <p>완료 후 개인적 평가</p>
+                  <p>심플한 느낌은 잘 구현이 되었으나 따뜻한 느낌이 잘 나타나지 않아 아쉽고,<br>
+                     동적인 기능을 많이 넣을려고 한 것이 오히려 복잡한 느낌이 나는 거 같아 아쉽습니다.
+                  </p>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="card_box card02">
+            <div style="overflow: hidden;">
+               <div class="card_img"><img src="./images/team_mockup.png" alt="쇼핑몰 프로젝트 목업"></div>
+               <div class="card_info">
+                  <p class="card_title">한국 천문 연구원 Renewal<span>반응형 웹사이트</span></p>
+                  <p class="card_txt"><span>제작페이지</span>mainpage, subpage * 1</p>
+                  <p class="card_txt"><span>글꼴</span>Noto Sans Korea</p>
+                  <p class="card_txt card_txt01"><span>색상</span><span class="team_color01 color"></span><span class="team_color02 color"></span></p>
+                  <p class="card_txt"><span>도구</span>CSS, jQuery</p>
+                  <div class="btn01 btn" onclick="team_project()">기획서</div>
+                  <div class="btn02 btn"><a href="./Researcher/index.html" target="_blank">웹사이트</a></div>
+                  <div class="btn03 btn" onclick="team_popup()">구현코드</div>
+               </div>
+            </div>
+            <div>
+               <div class="card_t">
+                  <p>방향성</p>
+                  <p>정보 전달과 커뮤니티 형성</p>
+               </div>
+               <div class="card_c">
+                  <p>개발 과정</p>
+                  <p>슬라이드를 기기에 따라 다르게 구현 어려움 → if문을 사용하여 해결<br>
+                     디바이스에 따라 버튼 갯수와 크기를 최적화 <br>
+                     천문학 자료실 파트에 팝업이 있다는 것을 인지하기 어려워 호버시 돋보기 아이콘 추가 <br>
+                     jQuery-ui, Slick, BxSlider 사용
+                  </p>
+               </div>
+               <div class="card_b">
+                  <p>완료 후 개인적 평가</p>
+                  <p>CSS 미디어쿼리 정리가 다소 미흡<br>
+                     반응형이다보니 window.resize시 유동적인 플러그인 적용이 힘이 들었습니다.
+                  </p>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="card_box card03">
+            <div style="overflow: hidden;">
+               <div class="card_img"><img src="./images/ceed_mockup.png" alt="쇼핑몰 프로젝트 목업"></div>
+               <div class="card_info">
+                  <p class="card_title">Ceed 영화 추천서비스<span>모바일 UI / UX</span></p>
+                  <p class="card_txt"><span>제작페이지</span>Home, Search, Community, Record</p>
+                  <p class="card_txt"><span>글꼴</span>Pretendard</p>
+                  <p class="card_txt card_txt01"><span>색상</span><span class="ceed_color01 color"></span><span class="ceed_color02 color"></span><span class="ceed_color03 color"></span></p>
+                  <p class="card_txt"><span>도구</span>Figma, PhotoShop, illustrator</p>
+                  <div class="btn01 btn"><a href="#!">기획서</a></div>
+                  <div class="btn02 btn"><a href="https://www.figma.com/design/r3GRZCZLyxRf2netU05iDl/%EC%98%81%ED%99%94-%EC%B6%94%EC%B2%9C-%EC%84%9C%EB%B9%84%EC%8A%A4?node-id=0-1&t=lMk8mVyevFPwcJ1m-1" target="_blank">완성결과</a></div>
+               </div>
+            </div>
+            <div>
+               <div class="card_t">
+                  <p>방향성</p>
+                  <p>차분한 디자인과 빠른 정보 제공 컨텐츠 제공</p>
+               </div>
+               <div class="card_c">
+                  <p>디자인과정</p>
+                  <p>글씨가 다소 작아 보완<br>
+                     Figma 사용 (컨퍼넌트, 프로토타입)
+                  </p>
+               </div>
+               <div class="card_b">
+                  <p>완료 후 개인적 평가</p>
+                  <p>컨포넌트를 이용하여 버튼등을 일부만 구현한 것이 아쉽습니다.<br>
+                     어두운 디자인만 있어서 밝은 테마도 만들어보고 싶습니다.<br>
+                  </p>
+               </div>
+            </div>
+
+         </div>
+
+   </section>
+
+   <section class="design">
+      <div class="design_txt">Design</div>
+      <h3>Banner</h3>
+      <div class="design_t">
+         <div class="design01"><img src="./images/banner01.png" alt="신학기특가배너"></div>
+         <div class="design02"><img src="./images/banner02.png" alt="3월쿠폰배너"></div>
+      </div>
+      <div class="design_c">
+         <div class="design03"><img src="./images/banner03.png" alt="침실서브배너"></div>
+         <div class="design04"><img src="./images/banner04.png" alt="리뉴얼런칭배너"></div>
+      </div>
+      <div class="design_b">
+         <div class="design05"><img src="./images/banner05.png" alt="방수커버카드배너"></div>
+         <div class="design06"><img src="./images/banner06.png" alt="md추천카드배너"></div>
+         <div class="design07"><img src="./images/banner07.png" alt="수납정리세일카드배너"></div>
+         <div class="design08"><img src="./images/banner08.png" alt="매트리스체험카드배너"></div>
+      </div>
+   </section>
+   <section class="contect">
+      <div class="contect_txt">Contect</div>
+      <p class="contect_info02">회사의 비전과 목표 달성에 기여함으로써</p>
+      <p class="contect_info03"><span>입체도형으로의 김대섭</span> 으로 성장하고 싶습니다.</p>
+      <div class="contect_info04">
+         <p><a href="mailto:eotjq1545@naver.com">eotjq1545@naver.com</a></p>
+      </div>
+      <p class="contect_info05"><a href="tel:010-6411-5682">010-6411-5682</a></p>
+      <p class="contect_info06">언제든지 연락해 주세요!</p>
+      <div class="contect_qr">
+         <img src="./images/mail_qr.png" alt="김대섭 메일 QR코드">
+      </div>
+      <div class="contect_bg">
+         <img src="./images/Gradient.png" alt="그라데이션 백그라운드">
+      </div>
+   </section>
+
+
+</body>
+
+</html>

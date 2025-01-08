@@ -1,0 +1,249 @@
+.hdr {
+   display: flex;
+   height: 50px;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 16px;
+}
+.hdr .logo {
+   width: 70px;
+}
+.hdr .btn_box {
+   overflow: hidden;
+}
+.hdr .btn_box div {
+   width: 36px; height: 36px;
+   background-color: antiquewhite;
+   text-align: center; line-height: 36px;
+   float: left;
+}
+.hdr .btn_box div span {
+   line-height: 36px;
+}
+
+.visual_main {
+   height: 300px;
+   background-color: lightseagreen;
+   margin-bottom: 30px;
+}
+
+/* ****************************** methphor ****************************** */
+.methphor_outer {
+   overflow-x: auto;
+   overflow-y: hidden;
+   margin-bottom: 30px;
+}
+.methphor_outer::-webkit-scrollbar {
+   display: none;
+}
+.methphor {
+   width: max-content;
+   margin: 0 16px;
+}
+.methphor .methphor_box {
+   width: calc((100vw - 72px) / 5 );
+   font-size: 12px;
+   text-align: center;
+   margin-right: 10px;
+   float: left;
+}
+.methphor .methphor_box:last-child {
+   margin-right: 0;
+}
+.methphor .methphor_box .methphor_img {
+   overflow: hidden;
+   border: 1px solid #ccc; box-sizing: border-box;
+   border-radius: 3px; 
+   margin-bottom: 10px;
+}
+
+/* ****************************** 공통속성 ****************************** */
+section {
+   padding: 0 16px;
+}
+.title {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+.title h3 {
+   height: 30px;
+   font-size: 20px;
+   font-weight: normal;
+   line-height: 30px;
+   padding-left: 10px; box-sizing: border-box;
+   position: relative;
+}
+.title h3:before {
+   display: block;
+   content: '';
+   height: 14px;
+   border-left: 4px solid #1c5760;
+   position: absolute;
+   top: 7px; left: 0;
+}
+.title a {
+   height: 30px;
+   display: block;
+   font-size: 12px;
+   font-family: Gmarketsans_light;
+   font-weight: bold;
+   color: #666;
+   line-height: 29px;
+}
+.title a i {
+   display: block;
+   font-weight: 300;
+   float: right;
+}
+
+/* ****************************** best ****************************** */
+.best {
+   margin-bottom: 40px;
+}
+.best_t, .best_b {
+   display: flex;
+   justify-content: space-between;
+}
+.best_t {
+   margin-bottom: 20px;
+}
+.best_t>div, .best_b>div {
+   width: 50%;
+}
+.best_t>div:first-child, .best_b>div:first-child {
+   margin-right: 10px;
+}
+.best_t>div .best_img, .best_b>div .best_img {
+   border: 1px solid #eee; box-sizing: border-box;
+   margin-bottom: 10px;
+}
+.best_t>div .best_title, .best_b>div .best_title {
+   height: 40px;
+   font-size: 14px;
+   font-family: Gmarketsans_light;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+
+/* ****************************** best ****************************** */
+.sale {
+   overflow: hidden;
+   background-color: #f9f5ed;
+   padding: 20px 16px 30px;
+   margin-bottom: 40px;
+}
+.sale_inner {
+   position: relative;
+}
+.sale_inner .sale_timer {
+   font-size: 24px;
+   color: #1c5760;
+   position: absolute;
+   z-index: 999;
+}
+.sale_inner .sale_timer p:last-child {
+   margin-left: 10px;
+}
+.sale_box_outer {
+   overflow-x: auto;
+   overflow-y: hidden;
+   width: calc((100vw - 52px) / 4 * 3 + 30px);
+   margin-left: calc((100vw - 62px) / 4 + 10px);
+}
+.sale_box_outer::-webkit-scrollbar {
+   display: none;
+}
+.sale_box {
+   width: max-content;
+}
+.sale_box li {
+   width: calc((100vw - 42px) / 2);
+   float: left;
+   margin-right: 10px;
+}
+.sale_box li:last-child {
+   margin-right: calc((100vw - 52px) / 4 + 24px);
+}
+.sale_box li .sale_img {
+   border: 1px solid #ccc; box-sizing: border-box;
+   margin-bottom: 10px;
+}
+.sale_box li .sale_title {
+   height: 20px;
+   font-size: 14px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   font-family: Gmarketsans_light;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+/* ****************************** md ****************************** */
+.md {
+   margin-bottom: 40px;
+}
+.md_box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.md_box:last-child {
+   margin-bottom: 0;
+}
+.md_box .md_img {
+   width: 33.3333%;
+   margin-right: 10px;
+}
+.md_box .md_info {
+   width: 66.6666%;
+}
+.md_box .md_info .md_subTitle {
+   font-size: 10px;
+   margin-bottom: 5px;
+   color: #222;
+}
+.md_box .md_info .md_title {
+   font-size: 14px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   font-family: Gmarketsans_light;
+   font-weight: bold;
+   color: #222;
+   margin-bottom: 10px;
+}
+
+/* ****************************** eventBnr ****************************** */
+.evtBnr {
+   height: 100px;
+   margin-bottom: 40px;
+}
+.evtBnr .bx-wrapper {
+   overflow: hidden;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.evtBnr_inner li {
+   height: 100px;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.evtBnr01 {
+   background-image: url(../images/event01.jpg);
+}
+.evtBnr02 {
+   background-image: url(../images/event02.jpg);
+}
+.evtBnr03 {
+   background-image: url(../images/event03.jpg);
+}
+.evtBnr04 {
+   background-image: url(../images/event04.jpg);
+}
+.evtBnr05 {
+   background-image: url(../images/event05.jpg);
+}

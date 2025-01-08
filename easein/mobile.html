@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="./css/mobileMain.css">
+
+   <script src="./js/jquery-3.7.1.min.js"></script>
+   <script src="./js/jquery.bxslider.min.js"></script>
+   <script src="./js/slick.min.js"></script>
+   <style>
+      * {margin: 0; padding: 0;}
+      a {text-decoration: none; color: black;}
+      li {list-style: none;}
+      img {display: block; width: 100%; height: auto;}
+
+      @font-face {
+         font-family: "Gmarketsans_light";
+         src: url(./fonts/GmarketSansLight.otf);
+      }
+      @font-face {
+         font-family: "Gmarketsans_medium";
+         src: url(./fonts/GmarketSansMedium.otf);
+      }
+      
+      
+
+
+   </style>
+   <script>
+      $(function(){
+         $('.evtBnr_inner').bxSlider({
+            slideMargin: 10,
+            auto: true,
+            controls:false,
+            pager:false,
+            stopAutoOnClick:true,
+
+
+         })
+      })
+   </script>
+</head>
+<body style="font-family: Gmarketsans_medium;">
+   <header class="hdr">
+      <div class="logo"><img src="./images/logo.svg" alt=""></div>
+      <div class="btn_box">
+         <div class="search_btn"><span class="material-symbols-rounded">search</span></div>
+         <div class="shopping_btn"><span class="material-symbols-rounded">shopping_bag</span></div>
+         <div class="hbr_btn"><span class="material-symbols-rounded">menu</span></div>
+      </div>
+   </header>
+
+   <div class="visual_main"></div>
+
+   <div class="methphor_outer">
+      <ul class="methphor">
+         <li class="methphor_box">
+            <div class="methphor_img">
+               <a href="#!">
+                  <img src="./images/quickmenu01.png" alt="침대 이미지">
+               </a>
+            </div>
+            <p class="methphor_txt"><a href="#!">침대</a></p>
+         </li>
+         <li class="methphor_box">
+            <div class="methphor_img">
+               <img src="./images/quickmenu02.png" alt="매트리스 이미지">
+            </div>
+            <p class="methphor_txt">매트리스</p>
+         </li>
+         <li class="methphor_box">
+            <div class="methphor_img">
+               <img src="./images/quickmenu03.png" alt="소파 이미지">
+            </div>
+            <p class="methphor_txt">소파</p>
+         </li>
+         <li class="methphor_box">
+            <div class="methphor_img">
+               <img src="./images/quickmenu04.png" alt="식탁 이미지">
+            </div>
+            <p class="methphor_txt">식탁</p>
+         </li>
+         <li class="methphor_box">
+            <div class="methphor_img">
+               <img src="./images/quickmenu05.png" alt="책상 이미지">
+            </div>
+            <p class="methphor_txt">책상</p>
+         </li>
+         <li class="methphor_box">
+            <div class="methphor_img">
+               <img src="./images/quickmenu06.png" alt="키즈 이미지">
+            </div>
+            <p class="methphor_txt">키즈</p>
+         </li>
+      </ul>
+   </div>
+   
+   <section class="best">
+      <div class="title">
+         <h3>BEST</h3>
+         <a href="#!">더보기<i class="material-symbols-outlined">navigate_next</i></a>
+      </div>
+      <div class="best_inner">
+         <div class="best_t">
+            <div class="best01">
+               <div class="best_img">
+                  <img src="./images/best01.jpg" alt="베른 애쉬원목 침대 프레임">
+               </div>
+               <p class="best_title">베른 애쉬원목 침대 프레임</p>
+               <p class="best_txt"><span style="color: #ed1c24;">40%</span> 344,400 원</p>
+            </div>
+            <div class="best02">
+               <div class="best_img">
+                  <img src="./images/best02.jpg" alt="프라임 침대 프레임 SS">
+               </div>
+               <p class="best_title">프라임 침대 프레임 SS</p>
+               <p class="best_txt"><span style="color: #ed1c24;">50%</span> 349,000 원</p>
+            </div>
+         </div>
+         <div class="best_b">
+            <div class="best03">
+               <div class="best_img">
+                  <img src="./images/best03.jpg" alt="EO 높은 수납장 1200">
+               </div>
+               <p class="best_title">EO 높은 수납장 1200</p>
+               <p class="best_txt"><span style="color: #ed1c24;">46%</span> 158,900 원</p>
+            </div>
+            <div class="best04">
+               <div class="best_img">
+                  <img src="./images/best04.jpg" alt="호텔 수납형 침대 LED조명">
+               </div>
+               <p class="best_title">호텔 수납형 침대 LED조명</p>
+               <p class="best_txt"><span style="color: #ed1c24;">43%</span> 249,000 원</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="sale">
+      <div class="title">
+         <h3>TIME SALE</h3>
+      </div>
+      <div class="sale_inner">
+         <div class="sale_timer">
+            <p>18일</p>
+            <p>06:57:48</p>
+         </div>
+         <div class="sale_box_outer">
+            <ul class="sale_box">
+               <li class="sale01">
+                  <div class="sale_img">
+                     <img src="./images/sale01.jpg" alt="3단 월넛 수납장">
+                  </div>
+                  <p class="sale_title">3단 월넛 수납장</p>
+                  <p class="sale_txt"><span style="color: #ed1c24;">61%</span> 299,000 원</p>
+               </li>
+               <li class="sale02">
+                  <div class="sale_img">
+                     <img src="./images/sale02.jpg" alt="고무나무 원목 체어">
+                  </div>
+                  <p class="sale_title">고무나무 원목 체어</p>
+                  <p class="sale_txt"><span style="color: #ed1c24;">22%</span> 62,000 원</p>
+               </li>
+               <li class="sale03">
+                  <div class="sale_img">
+                     <img src="./images/sale03.jpg" alt="비스포크 오브제 수납장">
+                  </div>
+                  <p class="sale_title">비스포크 오브제 수납장</p>
+                  <p class="sale_txt"><span style="color: #ed1c24;">40%</span> 209,400 원</p>
+               </li>
+               <li class="sale04">
+                  <div class="sale_img">
+                     <img src="./images/sale04.jpg" alt="아치형 전신 거울">
+                  </div>
+                  <p class="sale_title">아치형 전신 거울</p>
+                  <p class="sale_txt"><span style="color: #ed1c24;">55%</span> 39,900 원</p>
+               </li>
+               <li class="sale05">
+                  <div class="sale_img">
+                     <img src="./images/sale05.jpg" alt="5단 서랍장 800">
+                  </div>
+                  <p class="sale_title">5단 서랍장 800</p>
+                  <p class="sale_txt"><span style="color: #ed1c24;">43%</span> 104,900 원</p>
+               </li>
+               <li class="sale06">
+                  <div class="sale_img">
+                     <img src="./images/sale06.jpg" alt="도어형 수납장">
+                  </div>
+                  <p class="sale_title">도어형 수납장</p>
+                  <p class="sale_txt"><span style="color: #ed1c24;">53%</span> 99,900 원</p>
+               </li>
+               <li class="sale07">
+                  <div class="sale_img">
+                     <img src="./images/sale07.jpg" alt="아쿠아텍스 발수 패브릭 소파">
+                  </div>
+                  <p class="sale_title">아쿠아텍스 발수 패브릭 소파</p>
+                  <p class="sale_txt"><span style="color: #ed1c24;">37%</span> 239,000 원</p>
+               </li>
+               <li class="sale08">
+                  <div class="sale_img">
+                     <img src="./images/sale08.jpg" alt="수납형 거실 테이블">
+                  </div>
+                  <p class="sale_title">수납형 거실 테이블</p>
+                  <p class="sale_txt"><span style="color: #ed1c24;">37%</span> 114,900 원</p>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+   <section class="md">
+      <div class="title">
+         <h3>MD추천</h3>
+         <a href="#!">더보기<i class="material-symbols-outlined">navigate_next</i></a>
+      </div>
+      <div class="md_inner">
+         <div class="md_box">
+            <div class="md_img">
+               <img src="./images/md01.jpg" alt="1400폭 5단 다리형 책상 세트">
+            </div>
+            <div class="md_info">
+               <p class="md_subTitle">MD's pick</p>
+               <p class="md_title">1400폭 5단 다리형 책상 세트</p>
+               <p class="md_price"><span style="color: #ed1c24;">22%</span> 568,000 원</p>
+            </div>
+         </div>
+         <div class="md_box">
+            <div class="md_img">
+               <img src="./images/md02.jpg" alt="모딘 3단 수납침대 헤드포함">
+            </div>
+            <div class="md_info">
+               <p class="md_subTitle">MD's pick</p>
+               <p class="md_title">모딘 3단 수납침대 헤드포함</p>
+               <p class="md_price"><span style="color: #ed1c24;">54%</span> 229,000 원</p>
+            </div>
+         </div>
+         <div class="md_box">
+            <div class="md_img">
+               <img src="./images/md03.jpg" alt="빌리지 디자인 원목 침대">
+            </div>
+            <div class="md_info">
+               <p class="md_subTitle">MD's pick</p>
+               <p class="md_title">빌리지 디자인 원목 침대</p>
+               <p class="md_price"><span style="color: #ed1c24;">60%</span> 199,000원</p>
+            </div>
+         </div>
+         <div class="md_box">
+            <div class="md_img">
+               <img src="./images/md01.jpg" alt="패브릭 저상형 침대">
+            </div>
+            <div class="md_info">
+               <p class="md_subTitle">MD's pick</p>
+               <p class="md_title">패브릭 저상형 침대</p>
+               <p class="md_price"><span style="color: #ed1c24;">12%</span> 349,000원</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="evtBnr">
+      <ul class="evtBnr_inner">
+         <li class="evtBnr01"></li>
+         <li class="evtBnr02"></li>
+         <li class="evtBnr03"></li>
+         <li class="evtBnr04"></li>
+         <li class="evtBnr05"></li>
+      </ul>
+   </section>
+
+   <section class="new">
+      <div class="title">
+         <h3>NEW</h3>
+         <a href="#!">더보기<i class="material-symbols-outlined">navigate_next</i></a>
+      </div>
+      <div class="best_inner">
+         <div class="best_t">
+            <div class="best01">
+               <div class="best_img">
+                  <img src="./images/best01.jpg" alt="베른 애쉬원목 침대 프레임">
+               </div>
+               <p class="best_title">베른 애쉬원목 침대 프레임</p>
+               <p class="best_txt"><span style="color: #ed1c24;">40%</span> 344,400 원</p>
+            </div>
+            <div class="best02">
+               <div class="best_img">
+                  <img src="./images/best02.jpg" alt="프라임 침대 프레임 SS">
+               </div>
+               <p class="best_title">프라임 침대 프레임 SS</p>
+               <p class="best_txt"><span style="color: #ed1c24;">50%</span> 349,000 원</p>
+            </div>
+         </div>
+         <div class="best_b">
+            <div class="best03">
+               <div class="best_img">
+                  <img src="./images/best03.jpg" alt="EO 높은 수납장 1200">
+               </div>
+               <p class="best_title">EO 높은 수납장 1200</p>
+               <p class="best_txt"><span style="color: #ed1c24;">46%</span> 158,900 원</p>
+            </div>
+            <div class="best04">
+               <div class="best_img">
+                  <img src="./images/best04.jpg" alt="호텔 수납형 침대 LED조명">
+               </div>
+               <p class="best_title">호텔 수납형 침대 LED조명</p>
+               <p class="best_txt"><span style="color: #ed1c24;">43%</span> 249,000 원</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   
+</body>
+</html>
